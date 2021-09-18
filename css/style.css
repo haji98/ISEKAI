@@ -1,0 +1,219 @@
+* {
+    font-family: "Noto Sans";
+}
+
+/* =========== HOME  =========== */
+
+/* Header */
+.nav-blue {
+    background-color: #04C4D9;
+    color           : #1F1F26;
+    padding         : 70px 140px;
+}
+
+.nav-blue .navbar-brand img {
+    height: 40px;
+}
+
+.navbar-collapse {
+    justify-content: right;
+}
+
+.navbar-nav-left {
+    margin-right: 55px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-family  : "Segoe UI";
+    font-weight  : bold;
+    color        : #1F1F26;
+    font-size    : 20px;
+    padding-left : 25px;
+    padding-right: 25px;
+}
+
+.navbar-nav .nav-item img {
+    height: 35px;
+}
+
+.navbar-nav .nav-item.active {
+    color: #EBF9FB;
+}
+
+/* END - Header */
+
+/* Banner */
+.banner-info {
+    padding-top   : 130px;
+    padding-bottom: 250px;
+    text-align    : center;
+}
+
+.banner-header {
+    font-size  : 100px;
+    font-weight: bold;
+    color      : #EBF9FB;
+    padding    : 20px;
+}
+
+.banner-header img {
+    vertical-align: baseline;
+}
+
+.banner-desc {
+    width     : 800px;
+    text-align: center;
+    margin    : auto;
+}
+
+.banner-desc span {
+    font-size  : 30px;
+    font-weight: bold;
+    color      : #EBF9FB;
+}
+
+.banner-btn {
+    padding: 45px;
+}
+
+.banner-btn .btn {
+    padding         : 18px 23px;
+    font-weight     : bold;
+    font-size       : 22px;
+    color           : #04C4D9;
+    background-color: #FFFFFF;
+    border-radius   : 10px;
+}
+
+.banner-section .splide__slide {
+    background-image: url(../img/bg-banner.jpg);
+    background-size : 100%;
+}
+
+.banner-section .splide__pagination {
+    bottom: 50px;
+}
+
+.banner-section .splide__pagination__page {
+    margin: 10px;
+}
+
+.banner-section .splide__pagination__page.is-active {
+    transform : scale(1);
+    background: #04C4D9;
+}
+
+.banner-section .splide__arrow {
+    display: none;
+}
+
+/* END - Banner */
+
+/* Product */
+.product-show {
+    text-align      : center;
+    padding-top     : 100px;
+    padding-bottom  : 100px;
+    background-color: #EBF9FB;
+}
+
+.product-title {
+    color      : #04C4D9;
+    font-weight: bold;
+    font-size  : 70px;
+}
+
+.product-decs {
+    color    : #04C4D9;
+    font-size: 30px;
+    width    : 950px;
+    margin   : auto;
+}
+
+.product-links {
+    margin        : 30px auto;
+    padding-bottom: 65px;
+}
+
+.product-links a {
+    margin         : 0 25px;
+    text-decoration: none;
+    font-size      : 30px;
+    font-weight    : bold;
+    color          : #04C4D9;
+    padding-bottom : 15px;
+}
+
+.product-links a:hover,
+.product-links a.active {
+    border-bottom: 4px solid #04C4D9;
+}
+
+.product-img {
+    max-height   : 525px;
+    padding-left : 200px;
+    padding-right: 200px;
+}
+
+.product-info {
+    background-color: #04C4D9;
+    padding         : 83px 200px;
+}
+
+.product-info .icon {
+    height       : 85px;
+    width        : 85px;
+    background   : #FFFFFF;
+    border-radius: 50%;
+    padding      : 24px;
+}
+
+.product-info .icon img {
+    height: 35px;
+    width : auto;
+}
+
+.product-info .desc {
+    margin-left: 30px;
+}
+
+.product-info .desc .title {
+    font-size    : 50px;
+    font-weight  : bold;
+    color        : #1F1F26;
+    margin-bottom: 20px;
+}
+
+.product-info .desc .txt {
+    font-size  : 25px;
+    font-weight: bold;
+    color      : #1F1F26;
+}
+
+/* END - Product */
+
+/* Quotes */
+/* END - Quotes */
+
+/* Statistic */
+/* END - Statistic */
+
+/* Idea */
+/* END - Idea */
+
+/* News */
+/* END - News */
+
+/* Footer */
+/* END - Footer */
+
+/* =========== END - HOME  =========== */
+
+/* =========== LOGIN  =========== */
+/* =========== END - LOGIN  =========== */
+
+/* =========== REGISTER  =========== */
+/* =========== END - REGISTER  =========== */
+
+/* =========== SHOP  =========== */
+/* =========== END - SHOP  =========== */
