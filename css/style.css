@@ -12,8 +12,8 @@ header {
 .container-custom {
     padding-left : 0.625rem;
     padding-right: 0.625rem;
-    max-width: 105rem;
-    margin   : auto;
+    max-width    : 105rem;
+    margin       : auto;
 }
 
 .nav-blue {
@@ -161,8 +161,8 @@ header {
     border-bottom: 4px solid #04C4D9;
 }
 
-.product-img {
-    max-height: 51.563rem;
+.product-img img {
+    max-height: 31.25rem;
 }
 
 .product-info {
@@ -177,6 +177,7 @@ header {
     background   : #FFFFFF;
     border-radius: 50%;
     padding      : 24px;
+    cursor       : pointer;
 }
 
 .product-info .icon img {

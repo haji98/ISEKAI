@@ -17,7 +17,7 @@
     <!-- Scripts -->
     <script src="./lib/jquery/jquery-3.3.1.slim.min.js"></script>
     <script src="./lib/bootstrap/bootstrap.min.js"></script>
-    <script src="./lib/bootstrap/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="./js/functions.js"></script>
 
@@ -153,17 +153,21 @@
 
     <!-- Product -->
     <section class="product-section">
-        <div class="product-show">
+        <div class="product-show" id="accordionExample">
             <div class="product-title">Sản phẩm</div>
             <div class="product-decs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                 tempor invidunt ut labore et dolore magna</div>
-            <div class="product-links">
-                <a href="" class="active">Xem tất cả</a>
-                <a href="">Sản phẩm</a>
-                <a href="">Đặc biệt</a>
+            <div class="product-links" id="headingOne">
+                <a href="#show_all" class="active" data-toggle="collapse" role="button" aria-expanded="true"
+                    aria-controls="show_all">Xem tất cả</a>
+                <a href="#show_products" data-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="show_products">Sản phẩm</a>
+                <a href="#show_special" data-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="show_special">Đặc biệt</a>
             </div>
             <div class="product-img container-custom">
-                <div class="row">
+                <div class="row collapse show" id="show_all" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
                     <div class="col-sm-4">
                         <img src="./img/products/001.png" alt="" class="img-fluid">
                     </div>
@@ -172,6 +176,32 @@
                     </div>
                     <div class="col-sm-4">
                         <img src="./img/products/003.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="row collapse" id="show_products" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="col-sm-4">
+                        <img src="./img/products/004.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="./img/products/005.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="./img/products/006.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="row collapse" id="show_special" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="col-sm-4">
+                        <img src="./img/wigs/001.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="./img/wigs/002.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="./img/wigs/003.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -187,7 +217,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 d-flex">
-                    <div class="icon"><img src="./img/icon/heart-fill.png" alt=""></div>
+                    <div class="icon active"><img src="./img/icon/heart-fill.png" alt=""></div>
                     <div class="desc">
                         <div class="title">Yu Yu Hakusho</div>
                         <div class="txt">Lorem ipsum dolor sit amet,
@@ -226,6 +256,25 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         new Splide('#image-slider').mount();
+    });
+
+    $(function () {
+        // Show prduct
+        $(".product-links a").click(function () {
+            $(".product-links a").removeClass('active');
+            $(this).addClass('active');
+        });
+
+        // Like
+        $(".product-info .icon").click(function () {
+            if ($(this).hasClass('active')) {
+                $(this).find('img').attr('src', './img/icon/heart.png');
+                $(this).removeClass('active');
+            } else {
+                $(this).find('img').attr('src', './img/icon/heart-fill.png');
+                $(this).addClass('active');
+            }
+        });
     });
 </script>
 
