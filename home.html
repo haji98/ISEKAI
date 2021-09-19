@@ -153,55 +153,67 @@
 
     <!-- Product -->
     <section class="product-section">
-        <div class="product-show" id="accordionExample">
+        <div class="product-show">
             <div class="product-title">Sản phẩm</div>
             <div class="product-decs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                 tempor invidunt ut labore et dolore magna</div>
-            <div class="product-links" id="headingOne">
-                <a href="#show_all" class="active" data-toggle="collapse" role="button" aria-expanded="true"
-                    aria-controls="show_all">Xem tất cả</a>
-                <a href="#show_products" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="show_products">Sản phẩm</a>
-                <a href="#show_special" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="show_special">Đặc biệt</a>
+            <div class="product-links position-relative">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#show_all" id="all-tab" data-toggle="tab" role="tab"
+                            aria-controls="show_all" aria-selected="true">Xem tất cả</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#show_products" id="products-tab" data-toggle="tab" role="tab"
+                            aria-controls="show_products" aria-selected="false">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#show_special" id="special-tab" data-toggle="tab" role="tab"
+                            aria-controls="show_special" aria-selected="false">Đặc biệt</a>
+                    </li>
+                </ul>
+                <div class="line"></div>
             </div>
-            <div class="product-img container-custom">
-                <div class="row collapse show" id="show_all" aria-labelledby="headingOne"
-                    data-parent="#accordionExample">
-                    <div class="col-sm-4">
-                        <img src="./img/products/001.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="./img/products/002.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="./img/products/003.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-
-                <div class="row collapse" id="show_products" aria-labelledby="headingOne"
-                    data-parent="#accordionExample">
-                    <div class="col-sm-4">
-                        <img src="./img/products/004.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="./img/products/005.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="./img/products/006.png" alt="" class="img-fluid">
+            <div class="product-img container-custom tab-content">
+                <div class="tab-pane fade show active" id="show_all" role="tabpanel" aria-labelledby="all-tab">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="./img/products/001.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="./img/products/002.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="./img/products/003.png" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
 
-                <div class="row collapse" id="show_special" aria-labelledby="headingOne"
-                    data-parent="#accordionExample">
-                    <div class="col-sm-4">
-                        <img src="./img/wigs/001.png" alt="" class="img-fluid">
+                <div class="tab-pane fade" id="show_products" role="tabpanel" aria-labelledby="products-tab">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="./img/products/004.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="./img/products/005.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="./img/products/006.png" alt="" class="img-fluid">
+                        </div>
                     </div>
-                    <div class="col-sm-4">
-                        <img src="./img/wigs/002.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="./img/wigs/003.png" alt="" class="img-fluid">
+                </div>
+
+                <div class="tab-pane fade" id="show_special" role="tabpanel" aria-labelledby="special-tab">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="./img/wigs/001.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="./img/wigs/002.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="./img/wigs/003.png" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -280,7 +292,8 @@
     <section class="idea-section">
         <div class="idea-content container-custom">
             <div class="title">Ý tưởng</div>
-            <div class="txt">Sản phẩm của chúng mình lấy ý tưởng từ thể loại "Chuyển sinh" (Isekai) trong Anime & Manga Nhật Bản.</div>
+            <div class="txt">Sản phẩm của chúng mình lấy ý tưởng từ thể loại "Chuyển sinh" (Isekai) trong Anime & Manga
+                Nhật Bản.</div>
         </div>
         <div class="idea-poster">
             <img src="./img/poster-01.png" alt="">
@@ -292,9 +305,124 @@
     <!-- END - Idea -->
 
     <!-- News -->
+    <section class="news-section">
+        <div class="news-content container-custom">
+            <div class="title">Bản tin Wibu</div>
+            <div class="txt">Tin tức mới nhất về các hoạt động, Festival, các sự kiện diễn ra trong cộng đồng "wibu"
+                Việt Nam và thế giới.</div>
+        </div>
+        <div class="news-card container-custom">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="news-card-body">
+                        <div class="news-txt">Một người vô gia cư tại Hà Nội trong một cuộc phỏng vấn về tình hình dịch
+                            Covid 19 đã tự bộc bạch rằng thực ra bản thân là một vị vua của một đất nước đến từ thế giới
+                            khác - Vương quốc Toixaolin.</div>
+                        <div class="news-footer">
+                            <div class="ava"><img src="./img/ava-thang-dan.png" alt=""></div>
+                            <div class="info">
+                                <div class="name">Thằng Đần</div>
+                                <div class="time">5 hours ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-4">
+                    <div class="news-card-body">
+                        <div class="news-txt">Một thanh niên người Trung Quốc sinh sống ở Vũ Hán đã đăng lên mạng một
+                            đoạn phim chứng minh mình có thể thi triển hơi thở của nước (Kimetsu no Yaiba) bằng cách lắp
+                            vòi
+                            nước vào thanh kiếm katana tự chế của mình.</div>
+                        <div class="news-footer">
+                            <div class="ava"><img src="./img/ava-thang-dan.png" alt=""></div>
+                            <div class="info">
+                                <div class="name">Thằng Đần</div>
+                                <div class="time">1 days ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="news-card-body">
+                        <div class="news-txt">Gần đây có một tin đồn được nhiều người chia sẻ rằng nếu mỗi sáng bạn rít
+                            3 hơi thuốc lào liên tiếp, có thể bạn sẽ bay được đến thế giới khác - Isekai, giấc mơ của
+                            chúng
+                            ta sẽ thành hiện thực chăng?</div>
+                        <div class="news-footer">
+                            <div class="ava"><img src="./img/unknown.png" alt=""></div>
+                            <div class="info">
+                                <div class="name">???</div>
+                                <div class="time">2 days ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-btn">
+            <button class="btn">Xem thêm</button>
+        </div>
+    </section>
     <!-- END - News -->
 
     <!-- Footer -->
+    <footer>
+        <div class="footer-first">
+            <div class="container-custom">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="footer-logo"><img src="./img/logo.png" alt=""></div>
+                        <div class="footer-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</div>
+                        <div class="footer-social">
+                            <div class="social-item"><a href=""><img src="./img/icon/fb-icon.png" alt=""></a></div>
+                            <div class="social-item"><a href=""><img src="./img/icon/twitter-icon.png" alt=""></a></div>
+                            <div class="social-item"><a href=""><img src="./img/icon/in-icon.png" alt=""></a></div>
+                            <div class="social-item"><a href=""><img src="./img/icon/youtube-icon.png" alt=""></a></div>
+                            <div class="social-item"><a href=""><img src="./img/icon/phone-icon.png" alt=""></a></div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-4">
+                                <li>Products</li>
+                                <ol>Product 1</ol>
+                                <ol>Product 2</ol>
+                                <ol>Product 3</ol>
+                                <ol>Product 4</ol>
+                            </div>
+                            <div class="col-4">
+                                <li>Services</li>
+                                <ol>Service 1</ol>
+                                <ol>Service 2</ol>
+                                <ol>Service 3</ol>
+                                <ol>Service 4</ol>
+                            </div>
+                            <div class="col-4">
+                                <li>Resources</li>
+                                <ol>News</ol>
+                                <ol>Blog</ol>
+                                <ol>Videos</ol>
+                                <ol>FAQs</ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-sencond">
+            <div class="container-custom">
+                <div class="row">
+                    <div class="col-6">© 2021 Isekai. All Rights Reserved.</div>
+                    <div class="col-6 text-right">
+                        <a href="">Privacy Policy</a>
+                        <a href="">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- END - Footer -->
 </body>
 
@@ -304,12 +432,6 @@
     });
 
     $(function () {
-        // Show prduct
-        $(".product-links a").click(function () {
-            $(".product-links a").removeClass('active');
-            $(this).addClass('active');
-        });
-
         // Like
         $(".product-info .icon").click(function () {
             if ($(this).hasClass('active')) {
@@ -321,6 +443,26 @@
             }
         });
     });
+
+    function onTabClick(evt) {
+        setLineStyle(evt.target)
+    }
+
+    function setLineStyle(tab) {
+        let line = document.querySelector('.product-links > .line')
+        line.style.left = tab.offsetLeft + "px";
+        line.style.width = tab.clientWidth + "px";
+    }
+
+    /* bind events on load */
+    window.onload = function () {
+        const tabs = document.querySelectorAll('.product-links > .nav > .nav-item')
+        tabs.forEach((tab, index) => {
+            tab.onclick = onTabClick;
+
+            if (index == 0) setLineStyle(tab);
+        })
+    }
 </script>
 
 </html>

@@ -145,6 +145,7 @@ header {
 .product-links {
     margin        : 1.875rem auto;
     padding-bottom: 4.063rem;
+    width         : fit-content;
 }
 
 .product-links a {
@@ -154,11 +155,17 @@ header {
     font-weight    : bold;
     color          : #04C4D9;
     padding-bottom : 0.938rem;
+    display        : inline-block;
 }
 
-.product-links a:hover,
-.product-links a.active {
-    border-bottom: 4px solid #04C4D9;
+.line {
+    position        : absolute;
+    transition      : left 0.25s ease-in-out, width 0.25s 0.10s;
+    height          : 4px;
+    background-color: #04C4D9;
+    left            : 0;
+    width           : 69px;
+    pointer-events  : none;
 }
 
 .product-img img {
@@ -307,9 +314,182 @@ header {
 /* END - Idea */
 
 /* News */
+.news-section {
+    background-color: #EBF9FB;
+}
+
+.news-content {
+    padding-top   : 6rem;
+    padding-bottom: 4.625rem;
+    max-width     : 51.625rem;
+    margin        : auto;
+}
+
+.news-content .title {
+    font-size  : 4.375rem;
+    font-weight: bold;
+    color      : #04C4D9;
+    text-align : center;
+}
+
+.news-content .txt {
+    font-size  : 1.875rem;
+    font-weight: 500;
+    color      : #04C4D9;
+    text-align : center;
+    margin     : 2.25rem 0;
+}
+
+.news-card {
+    margin   : 3.625rem auto;
+    max-width: 94.875rem;
+}
+
+.news-card-body {
+    padding         : 45px 30px;
+    border          : 2px solid #1E69A2;
+    border-radius   : 5px;
+    min-height      : 30.25rem;
+    max-width       : 485px;
+    display         : flex;
+    flex-flow       : column;
+    justify-content : space-between;
+    background-color: #FFFFFF;
+    margin          : auto;
+
+}
+
+.news-txt {
+    color    : #04C4D9;
+    font-size: 1.563rem;
+}
+
+.news-footer {
+    padding-top: 1.625rem;
+    border-top : 1px solid #CFCFCF;
+    display    : flex;
+
+}
+
+.news-footer .ava {
+    height: 66px;
+    width : 66px;
+}
+
+.news-footer .ava img {
+    width        : 100%;
+    height       : auto;
+    object-fit   : cover;
+    border-radius: 50%;
+
+}
+
+.news-footer .info {
+    margin-left: 1.625rem;
+}
+
+.news-footer .info .name {
+    font-size  : 1.375rem;
+    font-weight: bold;
+    color      : #04C4D9;
+}
+
+.news-footer .info .time {
+    font-size  : 1.125rem;
+    font-weight: bold;
+    color      : #04C4D9;
+}
+
+.news-btn {
+    margin-top    : 6.25rem;
+    text-align    : center;
+    padding-bottom: 6.25rem;
+}
+
+.news-btn button {
+    background-color: #04C4D9;
+    border-radius   : 10px;
+    color           : #FCFCFC;
+    font-size       : 1.375rem;
+    font-weight     : bold;
+    padding         : 18px 46px;
+}
+
 /* END - News */
 
 /* Footer */
+footer .container-custom {
+    max-width: 99rem;
+    margin   : auto;
+}
+
+.footer-first {
+    background-color: #04C4D9;
+    padding         : 180px 0;
+    color           : #1F1F26;
+}
+
+.footer-logo img {
+    max-width: 12.875rem;
+}
+
+.footer-sencond {
+    background-color: #EBF9FB;
+    font-size       : 1.25rem;
+    font-weight     : bold;
+    color           : #1F1F26;
+    padding         : 42px 0;
+}
+
+.footer-desc {
+    margin-top   : 52px;
+    margin-bottom: 33px;
+    font-size    : 1.875rem;
+    font-weight  : 500;
+    max-width    : 545px;
+}
+
+.footer-social {
+    display    : flex;
+    gap        : 25px;
+    margin-left: -30px;
+}
+
+.social-item {
+    display        : flex;
+    height         : 75px;
+    width          : 75px;
+    justify-content: center;
+    align-items    : center;
+    border-radius  : 50%;
+}
+
+.social-item a {
+    text-decoration: none;
+}
+
+.footer-first li {
+    font-size    : 2.125rem;
+    font-weight  : bold;
+    margin-bottom: 3.625rem;
+    display      : block;
+}
+
+.footer-first ol {
+    font-size    : 1.563rem;
+    font-weight  : bold;
+    margin-bottom: 2.5rem;
+    padding      : 0;
+}
+
+.footer-sencond a {
+    text-decoration: none;
+    font-size      : 1.25rem;
+    font-weight    : bold;
+    color          : #1F1F26;
+    margin-left    : 87px;
+}
+
 /* END - Footer */
 
 /* =========== END - HOME  =========== */
