@@ -205,6 +205,30 @@ header {
 /* END - Product */
 
 /* Quotes */
+.quotes-section {
+    background-color: #EBF9FB;
+}
+
+.quotes-content {
+    max-width : 95rem;
+    padding   : 9.375rem 0;
+    margin    : auto;
+    text-align: center;
+}
+
+.quotes-content .txt {
+    font-size    : 2.625rem;
+    font-weight  : bold;
+    color        : #04C4D9;
+    margin-bottom: 6.25rem;
+}
+
+.quotes-content .author {
+    font-size  : 2rem;
+    font-weight: bold;
+    color      : #04C4D9;
+}
+
 /* END - Quotes */
 
 /* Statistic */
