@@ -99,7 +99,7 @@ header {
     background-image   : url(../img/bg-banner.jpg);
     background-size    : auto 100%;
     background-repeat  : no-repeat;
-    background-position: left top;
+    background-position: center center;
 }
 
 .banner-section .splide__pagination {
@@ -232,6 +232,38 @@ header {
 /* END - Quotes */
 
 /* Statistic */
+.quotes-statistic {
+    background-color: #04C4D9;
+}
+
+.statistic-content {
+    padding  : 5rem 0;
+    max-width: 81.25rem;
+    margin   : auto;
+}
+
+.statistic-content .title {
+    font-size    : 4.875rem;
+    font-weight  : bold;
+    text-align   : center;
+    color        : #1F1F26;
+    margin-bottom: 1.625rem;
+}
+
+.statistic-content .txt {
+    font-size  : 2rem;
+    font-weight: bold;
+    text-align : center;
+    color      : #1F1F26;
+}
+
+.statistic-img {
+    background-image: url(../img/statistic-img.jpg);
+    background-position: center bottom;
+    height: 44rem;
+    background-repeat  : no-repeat;
+}
+
 /* END - Statistic */
 
 /* Idea */
