@@ -6,6 +6,11 @@ $(function () {
         $('.not_login').removeClass('d-none');
         $('#logged').addClass('d-none');
     }
+
+    $('#register_step_3 .img-list img').on('click', function () {
+        var img = $(this).attr('src');
+        $('#register_step_3 .select-img img').attr('src', img);
+    })
 })
 
 function forgotPassword() {
@@ -126,9 +131,23 @@ function loginSuccess() {
 
 function modalClose(id) {
     $('#' + id).modal('hide');
+    if (id == 'loginModal') {
+        moveStep(1);
+    }
 }
 
 function logout() {
     localStorage.clear();
     location.reload();
+}
+
+function moveStep(step) {
+    $('#registerModal .modal-body').addClass('d-none');
+    $('#register_step_' + step).removeClass('d-none');
+
+    if (step == 5) {
+        localStorage.setItem('login', true);
+        $('.not_login').addClass('d-none');
+        $('#logged').removeClass('d-none');
+    }
 }

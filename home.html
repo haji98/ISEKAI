@@ -50,7 +50,7 @@
                         <a class="nav-item nav-link not_login" href="javascript:void(0)" data-toggle="modal"
                             data-target="#loginModal" onclick="loginModal()">Đăng nhập</a>
                         <a class="nav-item nav-link not_login" href="javascript:void(0)" data-toggle="modal"
-                            data-target="#registerModal">Đăng ký</a>
+                            data-target="#registerModal" onclick="moveStep(1)">Đăng ký</a>
                         <div class="dropdown nav-user d-none" id="logged">
                             <div class="d-flex align-items-center" id="nav-user" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
@@ -495,7 +495,7 @@
                             </div>
                         </div>
                         <div class="col-right">
-                            <div class="link-left d-none"><a href="./src/home/home_login.html">Trở về trang chủ</a>
+                            <div class="link-left d-none"><a href="home.html">Trở về trang chủ</a>
                             </div>
                             <img src="./img/bg-login.png" alt="">
                             <div class="link-right d-none"><a href="">Mua sắm ngay!</a></div>
@@ -510,7 +510,7 @@
     <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog login-modal register-modal" role="document">
             <div class="modal-content">
-                <div class="modal-body">
+                <div class="modal-body" id="register_step_1">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <img src="./img/icon/times-white-icon.png" alt="">
                     </button>
@@ -529,7 +529,7 @@
                                 </div>
                                 <input type="email" class="form-control" placeholder="Email">
                                 <input type="password" class="form-control" placeholder="Password">
-                                <button class="btn btn-block btn-login" type="button" onclick="register()">Đăng
+                                <button class="btn btn-block btn-login" type="button" onclick="moveStep(2)">Đăng
                                     ký</button>
                             </form>
                             <div class="login-space">Hoặc đăng nhập với</div>
@@ -548,6 +548,105 @@
                         </div>
                         <div class="col-right">
                             <img src="./img/img-register.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body register_step" id="register_step_2">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="./img/icon/times-white-icon.png" alt="">
+                    </button>
+                    <div class="">
+                        <div class="header-title">Chọn Avatar</div>
+                        <div class="header-desc">
+                            <span>Hãy chọn cho mình một trong những avatar có sẵn ở đây hoặc tự đăng tải ảnh của riêng
+                                bạn!</span>
+                        </div>
+                        <div class="content d-flex">
+                            <div class="select-img">
+                                <img src="./img/img-login-success.png" alt="">
+                                <button class="btn" onclick="moveStep(3)">Ảnh có sẵn</button>
+                            </div>
+                            <div class="select-img">
+                                <div class="bg-white">Ảnh của bản thân</div>
+                                <button class="btn" onclick="moveStep(4)">Tải ảnh</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body register_step" id="register_step_3">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="./img/icon/times-white-icon.png" alt="">
+                    </button>
+                    <div class="">
+                        <div class="header-title">Chọn Avatar</div>
+                        <div class="header-desc">
+                            <span>Hãy chọn cho mình một trong những avatar có sẵn ở đây hoặc tự đăng tải ảnh của riêng
+                                bạn!</span>
+                        </div>
+                        <div class="content d-flex">
+                            <div class="select-img">
+                                <img src="./img/img-login-success.png" alt="">
+                                <button class="btn" onclick="moveStep(5)">Ảnh có sẵn</button>
+                            </div>
+                        </div>
+                        <div class="img-list">
+                            <img src="./img/ava/001.png" alt="">
+                            <img src="./img/ava/002.png" alt="">
+                            <img src="./img/ava/003.png" alt="">
+                            <img src="./img/ava/004.png" alt="">
+                            <img src="./img/ava/005.png" alt="">
+                            <img src="./img/ava/001.png" alt="">
+                            <img src="./img/ava/001.png" alt="">
+                            <img src="./img/ava/001.png" alt="">
+                            <img src="./img/ava/001.png" alt="">
+                            <img src="./img/ava/001.png" alt="">
+                            <img src="./img/ava/001.png" alt="">
+                            <img src="./img/ava/001.png" alt="">
+                            <img src="./img/ava/001.png" alt="">
+                            <img src="./img/ava/001.png" alt="">
+                            <img src="./img/ava/001.png" alt="">
+                            <img src="./img/ava/001.png" alt="">
+                            <img src="./img/ava/001.png" alt="">
+                            <img src="./img/ava/001.png" alt="">
+                            <img src="./img/ava/001.png" alt="">
+                            <img src="./img/ava/001.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body register_step" id="register_step_4">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="./img/icon/times-white-icon.png" alt="">
+                    </button>
+                    <div class="">
+                        <div class="header-title">Chọn Avatar</div>
+                        <div class="header-desc">
+                            <span>Hãy chọn cho mình một trong những avatar có sẵn ở đây hoặc tự đăng tải ảnh của riêng
+                                bạn!</span>
+                        </div>
+                        <div class="content d-flex">
+                            <div class="select-img">
+                                <div class="bg-white">Ảnh của bản thân</div>
+                                <button class="btn" onclick="moveStep(5)">Tải ảnh</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body register_step" id="register_step_5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="./img/icon/times-white-icon.png" alt="">
+                    </button>
+                    <div class="text-center">
+                        <div class="header-title">Omedetō!</div>
+                        <div class="header-desc">Bạn đã tạo thành công tài khoản của mình!</div>
+                        <div class="content d-flex">
+                            <div class="link-left"><a href="home.html">Trở về trang chủ</a></div>
+                            <img src="./img/img-login-success.png" alt="">
+                            <div class="link-right"><a href="">Mua sắm ngay!</a></div>
                         </div>
                     </div>
                 </div>
