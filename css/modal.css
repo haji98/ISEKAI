@@ -1,0 +1,310 @@
+.login-modal {
+    position : relative;
+    max-width: 1258px;
+}
+
+.login-modal .modal-content {
+    width           : 1258px;
+    background-color: #04C4D9;
+    border          : 2px solid #1F1F26;
+}
+
+.login-modal .modal-body {
+    padding: 45px 45px 85px 130px;
+}
+
+.login-modal .modal-body .close {
+    position        : absolute;
+    top             : 45px;
+    right           : 45px;
+    height          : 67px;
+    width           : 67px;
+    border-radius   : 50%;
+    background-color: #FFFFFF;
+    opacity         : 1;
+}
+
+/* =========== LOGIN  =========== */
+.login-modal .col-left {
+    width: 400px;
+}
+
+.login-modal .col-right {
+    width: calc(100% - 400px);
+}
+
+.login-modal .header-title {
+    font-size    : 44px;
+    font-weight  : bold;
+    color        : #FFFFFF;
+    margin-top   : 40px;
+    margin-bottom: 20px;
+}
+
+.login-modal .header-desc {
+    margin-bottom: 45px;
+    font-weight  : bold;
+    font-size    : 22px;
+    color        : #EBF9FB;
+}
+
+.login-modal .header-desc a {
+    text-decoration: underline;
+}
+
+.login-modal form {
+    margin-bottom: 45px;
+    text-align   : right;
+}
+
+.login-modal form input.form-control {
+    margin-bottom   : 22px;
+    border          : 2px solid #1E69A2;
+    border-radius   : 5px;
+    background-color: #FFFFFF;
+    padding         : 23px 23px;
+    font-size       : 22px;
+    font-weight     : 500;
+    color           : #04C4D9;
+}
+
+.login-modal form #password {
+    margin-bottom: 10px;
+}
+
+.login-modal form input::placeholder {
+    font-size  : 22px;
+    font-weight: 500;
+    color      : #04C4D9;
+}
+
+.login-modal form a {
+    font-size      : 18px;
+    color          : #FFFFFF;
+    text-decoration: underline;
+}
+
+.login-modal form .form-check {
+    margin-top   : 27px;
+    margin-bottom: 19px;
+    padding      : 0;
+    display      : flex;
+    align-items  : center;
+}
+
+.login-modal form .form-check .form-check-input {
+    z-index: -9999;
+}
+
+.login-modal form .form-check .check-input-custom {
+    height          : 34px;
+    width           : 34px;
+    border-radius   : 5px;
+    border          : 2px solid #1E69A2;
+    background-color: #FFEFFF;
+    color           : #1E69A2;
+    margin          : 0;
+    cursor          : pointer;
+}
+
+.login-modal form .form-check .form-check-input[type=checkbox]:checked+.check-input-custom {
+    background-image   : url('../img/icon/checked-icon.png');
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.login-modal form .form-check .form-check-label {
+    color      : #EBF9FB;
+    font-size  : 19px;
+    font-weight: bold;
+    margin-left: 19px;
+}
+
+.login-modal .btn-login {
+    background-color: #3C3C3C;
+    color           : #FFEFFF;
+    font-size       : 22px;
+    font-weight     : bold;
+    border-radius   : 8px;
+    padding-top     : 19px;
+    padding-bottom  : 19px;
+}
+
+.login-modal .login-space {
+    color      : #EBF9FB;
+    font-size  : 18px;
+    font-weight: bold;
+}
+
+.login-modal .login-space::before,
+.login-modal .login-space::after {
+    content   : "";
+    display   : inline-block;
+    border-top: 2px solid #EBF9FB;
+    width     : calc(50% - 100px);
+    transform : translateY(-6px);
+}
+
+.login-modal .login-space::before {
+    margin-right: 10px;
+}
+
+.login-modal .login-space::after {
+    margin-left: 10px;
+}
+
+.login-modal .login-social {
+    display: flex;
+    gap    : 23px;
+    margin : 46px 23px 0 23px;
+}
+
+.login-social .social-item {
+    width           : 67px;
+    height          : 67px;
+    background-color: #FFFFFF;
+}
+
+.login-modal .col-right img {
+    height    : 100%;
+    width     : 100%;
+    object-fit: cover;
+}
+
+/* =========== END - LOGIN  =========== */
+
+/* =========== FORGOT PASSWORD  =========== */
+
+.forgot-modal .modal-content {
+    background-image : url('../img/bg-forgot.png');
+    background-repeat: no-repeat;
+}
+
+.forgot-modal .header-desc {
+    font-family: "Segoe UI";
+    font-weight: 400;
+}
+
+.forgot-modal .col-right img {
+    height    : auto;
+    margin-top: calc(50% - 50px);
+}
+
+.PIN-modal .col-right img {
+    transform: scaleX(-1);
+}
+
+.PIN-modal .input-group {
+    gap: 20px;
+}
+
+.PIN-modal .input-group .form-control {
+    border-radius: 5px;
+}
+
+.social-modal .col-right img {
+    transform: rotate(180deg);
+    height   : 100%;
+    margin   : 0
+}
+
+.PIN-confirm .modal-content {
+    background-image : url('../img/bg-forgot.png');
+    background-repeat: no-repeat;
+    text-align       : center;
+}
+
+.PIN-confirm .header-title {
+    font-family: "Segoe UI";
+    font-size  : 54px;
+    font-weight: bold;
+}
+
+.PIN-confirm .header-desc {
+    font-family: "Segoe UI";
+    font-size  : 26px;
+    max-width  : 540px;
+    font-weight: 400;
+    margin     : auto;
+}
+
+.PIN-confirm .col-left {
+    width: 100%;
+}
+
+.PIN-confirm .d-flex {
+    flex-wrap   : wrap;
+    margin-right: -15px;
+    margin-left : -15px;
+}
+
+.PIN-confirm .col-right {
+    width  : 100%;
+    margin : 20px 40px -85px 40px;
+    display: flex;
+    gap    : 95px;
+}
+
+.PIN-confirm .col-right img {
+    width : auto;
+    height: 600px;
+}
+
+.link-left {
+    background-image : url(../img/chat-left.png);
+    width            : 270px;
+    height           : 242px;
+    background-repeat: no-repeat;
+    margin-top       : 50px;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+}
+
+.link-right {
+    background-image : url(../img/chat-right.png);
+    width            : 270px;
+    height           : 242px;
+    background-repeat: no-repeat;
+    margin-top       : 50px;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+}
+
+.col-right a {
+    text-decoration: none;
+    font-size      : 35px;
+    font-weight    : bold;
+    color          : #04C4D9;
+    max-width      : 200px;
+}
+
+.login-success .col-right {
+    margin       : 0;
+    margin-top   : 20px;
+    margin-bottom: calc(66px + 56px);
+    position     : relative;
+}
+
+.login-success .col-right img {
+    background-color: #FFFFFF;
+    width           : 350px;
+    height          : 350px;
+    border-radius   : 8px;
+    object-fit      : contain;
+}
+
+.login-success .col-right::after {
+    position   : absolute;
+    content    : "Venti_02";
+    font-size  : 44px;
+    font-weight: bold;
+    color      : #EBF9FB;
+    bottom     : calc(-66px - 56px);
+    left       : calc(50% - 92px);
+}
+
+/* =========== END - FORGOT PASSWORD  =========== */
+/* =========== REGISTER  =========== */
+/* =========== END - REGISTER  =========== */
