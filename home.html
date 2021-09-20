@@ -442,18 +442,20 @@
                             <div class="header-title">Đăng nhập</div>
                             <div class="header-desc">
                                 <span>Người mới?</span>
-                                <a href="">Tạo tài khoản ở đây!</a>
+                                <a href="javascript:void(0)" onclick="modalClose('loginModal')" data-toggle="modal"
+                                    data-target="#registerModal">Tạo tài khoản ở đây!</a>
                             </div>
                             <form>
-                                <input type="email" class="form-control" id="email" placeholder="Email">
-                                <input type="password" class="form-control" id="password" placeholder="Password">
+                                <input type="email" class="form-control" placeholder="Email">
+                                <input type="password" class="form-control" placeholder="Password">
                                 <a href="javascript:void(forgotPassword())">Quên mật khẩu?</a>
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
                                     <span class="check-input-custom"></span>
                                     <label class="form-check-label" for="exampleCheck1">Giữ tôi luôn đăng nhập</label>
                                 </div>
-                                <button class="btn btn-block btn-login" type="button" onclick="loginSuccess()">Đăng nhập</button>
+                                <button class="btn btn-block btn-login" type="button" onclick="loginSuccess()">Đăng
+                                    nhập</button>
                             </form>
                             <div class="login-space">Hoặc đăng nhập với</div>
                             <div class="login-social">
@@ -470,7 +472,8 @@
                             </div>
                         </div>
                         <div class="col-right">
-                            <div class="link-left d-none"><a href="./src/home/home_login.html">Trở về trang chủ</a></div>
+                            <div class="link-left d-none"><a href="./src/home/home_login.html">Trở về trang chủ</a>
+                            </div>
                             <img src="./img/bg-login.png" alt="">
                             <div class="link-right d-none"><a href="">Mua sắm ngay!</a></div>
                         </div>
@@ -481,6 +484,53 @@
     </div>
     <!-- END - Login Modal -->
     <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog login-modal register-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="./img/icon/times-white-icon.png" alt="">
+                    </button>
+                    <div class="d-flex">
+                        <div class="col-left">
+                            <div class="header-title">Tạo tài khoản mới!</div>
+                            <div class="header-desc">
+                                <span>Bạn đã có tài khoản?</span>
+                                <a href="javascript:void(0)" onclick="modalClose('registerModal')" data-toggle="modal"
+                                    data-target="#loginModal">Đăng nhập</a>
+                            </div>
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Họ">
+                                    <input type="text" class="form-control" placeholder="Tên">
+                                </div>
+                                <input type="email" class="form-control" placeholder="Email">
+                                <input type="password" class="form-control" placeholder="Password">
+                                <button class="btn btn-block btn-login" type="button" onclick="register()">Đăng
+                                    ký</button>
+                            </form>
+                            <div class="login-space">Hoặc đăng nhập với</div>
+                            <div class="login-social">
+                                <div class="social-item"><a href="javascript:void(0)"><img
+                                            src="./img/icon/gg-white-icon.png" alt=""></a></div>
+                                <div class="social-item"><a href="javascript:void(0)"><img
+                                            src="./img/icon/fb-white-icon.png" alt=""></a>
+                                </div>
+                                <div class="social-item"><a href="javascript:void(0)"><img
+                                            src="./img/icon/in-white-icon.png" alt=""></a>
+                                </div>
+                                <div class="social-item"><a href="javascript:void(0)"><img
+                                            src="./img/icon/twitter-white-icon.png" alt=""></a></div>
+                            </div>
+                        </div>
+                        <div class="col-right">
+                            <img src="./img/img-register.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- END - Register Modal -->
 
 </body>

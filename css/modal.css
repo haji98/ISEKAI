@@ -194,11 +194,11 @@
     transform: scaleX(-1);
 }
 
-.PIN-modal .input-group {
+.modal-dialog .input-group {
     gap: 20px;
 }
 
-.PIN-modal .input-group .form-control {
+.modal-dialog .input-group .form-control {
     border-radius: 5px;
 }
 
@@ -307,4 +307,44 @@
 
 /* =========== END - FORGOT PASSWORD  =========== */
 /* =========== REGISTER  =========== */
+.register-modal .col-left {
+    width: 460px;
+}
+
+.register-modal .modal-body {
+    background-color: #EBF9FB;
+}
+
+.register-modal .header-title,
+.register-modal .header-desc,
+.register-modal .btn-login,
+.register-modal .login-space {
+    color: #04C4D9;
+}
+
+.register-modal .login-space::before,
+.register-modal .login-space::after {
+    border-color: #04C4D9;
+}
+
+.register-modal form #password {
+    margin-bottom: 20px;
+}
+
+.register-modal .social-item {
+    background-color: #04C4D9;
+}
+
+.register-modal .col-right {
+    width: calc(100% - 460px);
+}
+
+.register-modal .col-right img {
+    width: auto;
+}
+
+.register-modal .modal-body .close {
+    background-color: #04C4D9;
+}
+
 /* =========== END - REGISTER  =========== */
