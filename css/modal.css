@@ -183,6 +183,7 @@
 .forgot-modal .header-desc {
     font-family: "Segoe UI";
     font-weight: 400;
+    height     : 145px;
 }
 
 .forgot-modal .col-right img {
@@ -192,6 +193,11 @@
 
 .PIN-modal .col-right img {
     transform: scaleX(-1);
+}
+
+.forgot-modal form input.form-control,
+.PIN-modal form input.form-control {
+    padding: 32px 23px;
 }
 
 .modal-dialog .input-group {
@@ -226,6 +232,7 @@
     max-width  : 540px;
     font-weight: 400;
     margin     : auto;
+    height     : 145px;
 }
 
 .PIN-confirm .col-left {

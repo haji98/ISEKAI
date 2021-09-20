@@ -1,3 +1,13 @@
+$(function () {
+    if (window.localStorage.getItem('login')) {
+        $('.not_login').addClass('d-none');
+        $('#logged').removeClass('d-none');
+    } else {
+        $('.not_login').removeClass('d-none');
+        $('#logged').addClass('d-none');
+    }
+})
+
 function forgotPassword() {
     $('#loginModal .modal-dialog').removeClass('social-modal');
     $('#loginModal .modal-dialog').addClass('forgot-modal');
@@ -25,7 +35,7 @@ function PIN() {
             <input type="text" class="form-control">
             <input type="text" class="form-control">
         </div>
-        <button class="btn btn-block btn-login" type="button" onclick="PINConfirm()">Gửi mã</button>`);
+        <button class="btn btn-block btn-login" type="button" onclick="PINConfirm()">Nhập mã</button>`);
     $('#loginModal .col-right img').attr('src', './img/img-forgot.png');
     $('#loginModal .link-left').addClass('d-none');
     $('#loginModal .link-right').addClass('d-none');
@@ -47,11 +57,13 @@ function loginModal() {
     $('#loginModal .modal-dialog').removeClass('forgot-modal');
     $('#loginModal .modal-dialog').removeClass('PIN-modal');
     $('#loginModal .modal-dialog').removeClass('social-modal');
+    $('#loginModal .modal-dialog').removeClass('PIN-confirm');
+    $('#loginModal .modal-dialog').removeClass('login-success');
     $('#loginModal .modal-dialog').addClass('login-modal');
     $('#loginModal .header-title').html('Đăng nhập');
     $('#loginModal .header-desc').html(
         `<span>Người mới?</span>
-        <a href="">Tạo tài khoản ở đây!</a>`
+        <a href="javascript:void(0)" onclick="modalClose('loginModal')" data-toggle="modal" data-target="#registerModal">Tạo tài khoản ở đây!</a>`
     );
     $('#loginModal form').html(
         `<input type="email" class="form-control" id="email" placeholder="Email">
@@ -66,6 +78,10 @@ function loginModal() {
     $('#loginModal .col-right img').attr('src', './img/bg-login.png');
     $('#loginModal .link-left').addClass('d-none');
     $('#loginModal .link-right').addClass('d-none');
+
+    $('#loginModal form').removeClass('d-none');
+    $('#loginModal .login-space').removeClass('d-none');
+    $('#loginModal .login-social').removeClass('d-none');
 }
 
 function PINConfirm() {
@@ -102,8 +118,17 @@ function loginSuccess() {
     $('#loginModal .col-right img').attr('src', './img/img-login-success.png');
     $('#loginModal .link-left').removeClass('d-none');
     $('#loginModal .link-right').removeClass('d-none');
+
+    localStorage.setItem('login', true);
+    $('.not_login').addClass('d-none');
+    $('#logged').removeClass('d-none');
 }
 
 function modalClose(id) {
     $('#' + id).modal('hide');
+}
+
+function logout() {
+    localStorage.clear();
+    location.reload();
 }

@@ -47,10 +47,33 @@
                         <a class="nav-item nav-link" href="#">Liên hệ</a>
                     </div>
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="javascript:void(0)" data-toggle="modal"
-                            data-target="#loginModal">Đăng nhập</a>
-                        <a class="nav-item nav-link" href="javascript:void(0)" data-toggle="modal"
+                        <a class="nav-item nav-link not_login" href="javascript:void(0)" data-toggle="modal"
+                            data-target="#loginModal" onclick="loginModal()">Đăng nhập</a>
+                        <a class="nav-item nav-link not_login" href="javascript:void(0)" data-toggle="modal"
                             data-target="#registerModal">Đăng ký</a>
+                        <div class="dropdown nav-user d-none" id="logged">
+                            <div class="d-flex align-items-center" id="nav-user" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <div class="ava"><img src="./img/img-login-success.png" alt=""></div>
+                                <div class="username">Venti_02</div>
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="nav-user">
+                                <div class="dropdown-info">
+                                    <div class="ava"><img src="./img/img-login-success.png" alt=""></div>
+                                    <div class="info">
+                                        <span class="username">Venti_02</span>
+                                        <span class="name">Hai Anh</span>
+                                    </div>
+                                </div>
+                                <a class="dropdown-item" href="#"><img src="./img/icon/user-icon.png" alt=""><span>Thông
+                                        tin tài khoản</span></a>
+                                <a class="dropdown-item" href="#"><img src="./img/icon/doc-icon.png" alt=""><span>Đơn
+                                        hàng</span></a>
+                                <hr>
+                                <a class="dropdown-item" href="javascript:logout()"><img
+                                        src="./img/icon/logout-icon.png" alt=""><span>Đăng xuất</span></a>
+                            </div>
+                        </div>
                         <a class="nav-item nav-link" href="#"><img src="./img/icon/shopping-cart.png"
                                 alt="Giỏ hàng"></a>
                     </div>
