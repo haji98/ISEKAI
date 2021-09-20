@@ -44,8 +44,104 @@ header {
     height: 2.188rem;
 }
 
+.navbar-nav .nav-item:hover,
 .navbar-nav .nav-item.active {
     color: #EBF9FB;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display    : block;
+    margin-top : -60px;
+    margin-left: -40px;
+}
+
+.dropdown>.nav-item:active {
+    pointer-events: none;
+}
+
+#nav-user .ava img {
+    background-color: #FFFFFF;
+    width           : 57px;
+    height          : 57px;
+    border-radius   : 50%;
+    object-fit      : contain;
+}
+
+#nav-user .username {
+    font-size  : 23px;
+    font-weight: bold;
+    color      : #FFFFFF;
+    margin-left: 25px;
+}
+
+.nav-user {
+    margin-right: 90px;
+}
+
+.nav-user .dropdown-menu {
+    background-image: url(../img/bg-user.png);
+    background-color: #1E69A2;
+    padding         : 35px;
+}
+
+.nav-user .dropdown-menu .dropdown-info {
+    display      : flex;
+    margin-bottom: 40px;
+    gap          : 20px;
+}
+
+.nav-user .dropdown-menu .dropdown-info .ava img {
+    width           : 93px;
+    height          : 93px;
+    background-color: #FFFFFF;
+    border-radius   : 50%;
+    object-fit      : contain;
+}
+
+.nav-user .dropdown-menu .dropdown-info .info .username {
+    font-size: 34px;
+    color    : #04C4D9;
+}
+
+.nav-user .dropdown-menu .dropdown-info .info .name {
+    font-size: 17px;
+    color    : #FFFFFF;
+}
+
+.nav-user .dropdown-menu a {
+    display      : flex;
+    align-items  : center;
+    margin-bottom: 20px;
+    padding      : 0;
+}
+
+.nav-user .dropdown-menu a:last-child {
+    margin-bottom: 0;
+}
+
+.nav-user .dropdown-menu a img {
+    width       : 30px;
+    height      : 30px;
+    margin-right: 20px;
+    object-fit  : contain;
+}
+
+.nav-user .dropdown-menu a span {
+    font-size  : 19px;
+    font-weight: 300;
+    color      : #FFFFFF;
+}
+
+.nav-user .dropdown-menu hr {
+    border-top   : 2px solid #EBF9FB;
+    margin-bottom: 20px;
+}
+
+.nav-user .dropdown-item:focus,
+.nav-user .dropdown-item:hover {
+    font-weight     : bold;
+    background-color: transparent;
+    color      : #FFFFFF;
 }
 
 /* END - Header */

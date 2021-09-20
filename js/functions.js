@@ -5,7 +5,7 @@ function forgotPassword() {
     $('.header-desc').html('Bạn không may quên mất mật khẩu tài khoản của mình? Không sao! Hãy nhập email mà bạn cần lấy lại mật khẩu và chúng mình sẽ gửi mã xác nhận cho bạn.');
     $('form').html(
         `<input type="email" class="form-control" id="email" placeholder="Email:">
-        <button class="btn btn-block btn-login" onclick="PIN()">Gửi mã</button>`);
+        <button class="btn btn-block btn-login" type="button" onclick="PIN()">Gửi mã</button>`);
     $('.col-right img').attr('src', './img/img-forgot.png');
     $('.link-left').addClass('d-none');
     $('.link-right').addClass('d-none');
@@ -25,7 +25,7 @@ function PIN() {
             <input type="text" class="form-control">
             <input type="text" class="form-control">
         </div>
-        <button class="btn btn-block btn-login" onclick="PINConfirm()">Gửi mã</button>`);
+        <button class="btn btn-block btn-login" type="button" onclick="PINConfirm()">Gửi mã</button>`);
     $('.col-right img').attr('src', './img/img-forgot.png');
     $('.link-left').addClass('d-none');
     $('.link-right').addClass('d-none');
@@ -37,7 +37,7 @@ function socialModal() {
     $('.modal-dialog').removeClass('PIN-modal');
     $('.header-title').html('Lỗi rồi :(');
     $('.header-desc').html('Có thể máy tính của bạn đang gặp vấn đề về mạng. Vui lòng kiểm tra lại đường truyền của bạn!');
-    $('form').html(`<button class="btn btn-block btn-login" onclick="loginModal()">Thử lại</button>`);
+    $('form').html(`<button class="btn btn-block btn-login" type="button" onclick="loginModal()">Thử lại</button>`);
     $('.col-right img').attr('src', './img/bg-login.png');
     $('.link-left').addClass('d-none');
     $('.link-right').addClass('d-none');
@@ -62,7 +62,7 @@ function loginModal() {
             <span class="check-input-custom"></span>
             <label class="form-check-label" for="exampleCheck1">Giữ tôi luôn đăng nhập</label>
         </div>
-        <button class="btn btn-block btn-login" onclick="loginSuccess()">Đăng nhập</button>`);
+        <button class="btn btn-block btn-login" type="button" onclick="loginSuccess()">Đăng nhập</button>`);
     $('.col-right img').attr('src', './img/bg-login.png');
     $('.link-left').addClass('d-none');
     $('.link-right').addClass('d-none');

@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
     <title>Trang chủ</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../lib/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <link href="./css/style.css" rel="stylesheet">
-    <link href="./css/home.css" rel="stylesheet">
-    <link href="./css/modal.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/home.css" rel="stylesheet">
+    <link href="../../css/modal.css" rel="stylesheet">
 
     <!-- Scripts -->
-    <script src="./lib/jquery/jquery-3.3.1.slim.min.js"></script>
-    <script src="./lib/bootstrap/bootstrap.min.js"></script>
+    <script src="../../lib/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../lib/bootstrap/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-    <script src="./js/functions.js"></script>
+    <script src="../../js/functions.js"></script>
 
 </head>
 
@@ -30,8 +30,8 @@
     <header>
         <div class="container-custom">
             <nav class="navbar navbar-expand-lg nav-blue">
-                <a class="navbar-brand" href="home.html">
-                    <img src="./img/logo.png" alt="ISEKAI Logo" class="img-fluid">
+                <a class="navbar-brand" href="home_login.html">
+                    <img src="../../img/logo.png" alt="ISEKAI Logo" class="img-fluid">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,7 @@
                 </button>
                 <div class="collapse navbar-collapse text-right" id="navbarNavAltMarkup">
                     <div class="navbar-nav navbar-nav-left">
-                        <a class="nav-item nav-link active" href="home.html">Trang chủ <span
+                        <a class="nav-item nav-link active" href="home_login.html">Trang chủ <span
                                 class="sr-only">(current)</span></a>
                         <a class="nav-item nav-link" href="#">Cửa hàng</a>
                         <a class="nav-item nav-link" href="#">Đặc biệt</a>
@@ -47,11 +47,30 @@
                         <a class="nav-item nav-link" href="#">Liên hệ</a>
                     </div>
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="javascript:void(0)" data-toggle="modal"
-                            data-target="#loginModal">Đăng nhập</a>
-                        <a class="nav-item nav-link" href="javascript:void(0)" data-toggle="modal"
-                            data-target="#registerModal">Đăng ký</a>
-                        <a class="nav-item nav-link" href="#"><img src="./img/icon/shopping-cart.png"
+                        <div class="dropdown nav-user">
+                            <div class="d-flex align-items-center" id="nav-user" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <div class="ava"><img src="../../img/img-login-success.png" alt=""></div>
+                                <div class="username">Venti_02</div>
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="nav-user">
+                                <div class="dropdown-info">
+                                    <div class="ava"><img src="../../img/img-login-success.png" alt=""></div>
+                                    <div class="info">
+                                        <span class="username">Venti_02</span>
+                                        <span class="name">Hai Anh</span>
+                                    </div>
+                                </div>
+                                <a class="dropdown-item" href="#"><img src="../../img/icon/user-icon.png"
+                                        alt=""><span>Thông tin tài khoản</span></a>
+                                <a class="dropdown-item" href="#"><img src="../../img/icon/doc-icon.png"
+                                        alt=""><span>Đơn hàng</span></a>
+                                <hr>
+                                <a class="dropdown-item" href="../../home.html"><img
+                                        src="../../img/icon/logout-icon.png" alt=""><span>Đăng xuất</span></a>
+                            </div>
+                        </div>
+                        <a class="nav-item nav-link" href="#"><img src="../../img/icon/shopping-cart.png"
                                 alt="Giỏ hàng"></a>
                     </div>
                 </div>
@@ -67,7 +86,7 @@
                 <ul class="splide__list">
                     <li class="splide__slide">
                         <div class="banner-info">
-                            <h1 class="banner-header">Wellcome to <img src="./img/logo-light.png" alt="ISEKAI Logo"
+                            <h1 class="banner-header">Wellcome to <img src="../../img/logo-light.png" alt="ISEKAI Logo"
                                     class="img-fluid"></h1>
                             <div class="banner-desc">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -81,7 +100,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="banner-info">
-                            <h1 class="banner-header">Wellcome to <img src="./img/logo-light.png" alt="ISEKAI Logo"
+                            <h1 class="banner-header">Wellcome to <img src="../../img/logo-light.png" alt="ISEKAI Logo"
                                     class="img-fluid"></h1>
                             <div class="banner-desc">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -95,7 +114,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="banner-info">
-                            <h1 class="banner-header">Wellcome to <img src="./img/logo-light.png" alt="ISEKAI Logo"
+                            <h1 class="banner-header">Wellcome to <img src="../../img/logo-light.png" alt="ISEKAI Logo"
                                     class="img-fluid"></h1>
                             <div class="banner-desc">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -109,7 +128,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="banner-info">
-                            <h1 class="banner-header">Wellcome to <img src="./img/logo-light.png" alt="ISEKAI Logo"
+                            <h1 class="banner-header">Wellcome to <img src="../../img/logo-light.png" alt="ISEKAI Logo"
                                     class="img-fluid"></h1>
                             <div class="banner-desc">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -123,7 +142,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="banner-info">
-                            <h1 class="banner-header">Wellcome to <img src="./img/logo-light.png" alt="ISEKAI Logo"
+                            <h1 class="banner-header">Wellcome to <img src="../../img/logo-light.png" alt="ISEKAI Logo"
                                     class="img-fluid"></h1>
                             <div class="banner-desc">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -137,7 +156,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="banner-info">
-                            <h1 class="banner-header">Wellcome to <img src="./img/logo-light.png" alt="ISEKAI Logo"
+                            <h1 class="banner-header">Wellcome to <img src="../../img/logo-light.png" alt="ISEKAI Logo"
                                     class="img-fluid"></h1>
                             <div class="banner-desc">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -182,13 +201,13 @@
                 <div class="tab-pane fade show active" id="show_all" role="tabpanel" aria-labelledby="all-tab">
                     <div class="row">
                         <div class="col-sm-4">
-                            <img src="./img/products/001.png" alt="" class="img-fluid">
+                            <img src="../../img/products/001.png" alt="" class="img-fluid">
                         </div>
                         <div class="col-sm-4">
-                            <img src="./img/products/002.png" alt="" class="img-fluid">
+                            <img src="../../img/products/002.png" alt="" class="img-fluid">
                         </div>
                         <div class="col-sm-4">
-                            <img src="./img/products/003.png" alt="" class="img-fluid">
+                            <img src="../../img/products/003.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -196,13 +215,13 @@
                 <div class="tab-pane fade" id="show_products" role="tabpanel" aria-labelledby="products-tab">
                     <div class="row">
                         <div class="col-sm-4">
-                            <img src="./img/products/004.png" alt="" class="img-fluid">
+                            <img src="../../img/products/004.png" alt="" class="img-fluid">
                         </div>
                         <div class="col-sm-4">
-                            <img src="./img/products/005.png" alt="" class="img-fluid">
+                            <img src="../../img/products/005.png" alt="" class="img-fluid">
                         </div>
                         <div class="col-sm-4">
-                            <img src="./img/products/006.png" alt="" class="img-fluid">
+                            <img src="../../img/products/006.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -210,13 +229,13 @@
                 <div class="tab-pane fade" id="show_special" role="tabpanel" aria-labelledby="special-tab">
                     <div class="row">
                         <div class="col-sm-4">
-                            <img src="./img/wigs/001.png" alt="" class="img-fluid">
+                            <img src="../../img/wigs/001.png" alt="" class="img-fluid">
                         </div>
                         <div class="col-sm-4">
-                            <img src="./img/wigs/002.png" alt="" class="img-fluid">
+                            <img src="../../img/wigs/002.png" alt="" class="img-fluid">
                         </div>
                         <div class="col-sm-4">
-                            <img src="./img/wigs/003.png" alt="" class="img-fluid">
+                            <img src="../../img/wigs/003.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -225,7 +244,7 @@
         <div class="product-info">
             <div class="row container-custom">
                 <div class="col-sm-4 d-flex">
-                    <div class="icon"><img src="./img/icon/heart.png" alt=""></div>
+                    <div class="icon"><img src="../../img/icon/heart.png" alt=""></div>
                     <div class="desc">
                         <div class="title">Machi Shirt</div>
                         <div class="txt">Lorem ipsum dolor sit amet,
@@ -233,7 +252,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 d-flex">
-                    <div class="icon active"><img src="./img/icon/heart-fill.png" alt=""></div>
+                    <div class="icon active"><img src="../../img/icon/heart-fill.png" alt=""></div>
                     <div class="desc">
                         <div class="title">Yu Yu Hakusho</div>
                         <div class="txt">Lorem ipsum dolor sit amet,
@@ -241,7 +260,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 d-flex">
-                    <div class="icon"><img src="./img/icon/heart.png" alt=""></div>
+                    <div class="icon"><img src="../../img/icon/heart.png" alt=""></div>
                     <div class="desc">
                         <div class="title">Sakura Shirt</div>
                         <div class="txt">Lorem ipsum dolor sit amet,
@@ -300,10 +319,10 @@
                 Nhật Bản.</div>
         </div>
         <div class="idea-poster">
-            <img src="./img/poster-01.png" alt="">
-            <img src="./img/poster-02.jpg" alt="">
-            <img src="./img/poster-03.jpg" alt="">
-            <img src="./img/poster-04.jpg" alt="">
+            <img src="../../img/poster-01.png" alt="">
+            <img src="../../img/poster-02.jpg" alt="">
+            <img src="../../img/poster-03.jpg" alt="">
+            <img src="../../img/poster-04.jpg" alt="">
         </div>
     </section>
     <!-- END - Idea -->
@@ -323,7 +342,7 @@
                             Covid 19 đã tự bộc bạch rằng thực ra bản thân là một vị vua của một đất nước đến từ thế giới
                             khác - Vương quốc Toixaolin.</div>
                         <div class="news-footer">
-                            <div class="ava"><img src="./img/ava-thang-dan.png" alt=""></div>
+                            <div class="ava"><img src="../../img/ava-thang-dan.png" alt=""></div>
                             <div class="info">
                                 <div class="name">Thằng Đần</div>
                                 <div class="time">5 hours ago</div>
@@ -339,7 +358,7 @@
                             vòi
                             nước vào thanh kiếm katana tự chế của mình.</div>
                         <div class="news-footer">
-                            <div class="ava"><img src="./img/ava-thang-dan.png" alt=""></div>
+                            <div class="ava"><img src="../../img/ava-thang-dan.png" alt=""></div>
                             <div class="info">
                                 <div class="name">Thằng Đần</div>
                                 <div class="time">1 days ago</div>
@@ -354,7 +373,7 @@
                             chúng
                             ta sẽ thành hiện thực chăng?</div>
                         <div class="news-footer">
-                            <div class="ava"><img src="./img/unknown.png" alt=""></div>
+                            <div class="ava"><img src="../../img/unknown.png" alt=""></div>
                             <div class="info">
                                 <div class="name">???</div>
                                 <div class="time">2 days ago</div>
@@ -376,15 +395,18 @@
             <div class="container-custom">
                 <div class="row">
                     <div class="col-6">
-                        <div class="footer-logo"><img src="./img/logo.png" alt=""></div>
+                        <div class="footer-logo"><img src="../../img/logo.png" alt=""></div>
                         <div class="footer-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua.</div>
                         <div class="footer-social">
-                            <div class="social-item"><a href=""><img src="./img/icon/fb-icon.png" alt=""></a></div>
-                            <div class="social-item"><a href=""><img src="./img/icon/twitter-icon.png" alt=""></a></div>
-                            <div class="social-item"><a href=""><img src="./img/icon/in-icon.png" alt=""></a></div>
-                            <div class="social-item"><a href=""><img src="./img/icon/youtube-icon.png" alt=""></a></div>
-                            <div class="social-item"><a href=""><img src="./img/icon/phone-icon.png" alt=""></a></div>
+                            <div class="social-item"><a href=""><img src="../../img/icon/fb-icon.png" alt=""></a></div>
+                            <div class="social-item"><a href=""><img src="../../img/icon/twitter-icon.png" alt=""></a>
+                            </div>
+                            <div class="social-item"><a href=""><img src="../../img/icon/in-icon.png" alt=""></a></div>
+                            <div class="social-item"><a href=""><img src="../../img/icon/youtube-icon.png" alt=""></a>
+                            </div>
+                            <div class="social-item"><a href=""><img src="../../img/icon/phone-icon.png" alt=""></a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-6">
@@ -429,60 +451,6 @@
     </footer>
     <!-- END - Footer -->
 
-    <!-- Login Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog login-modal" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <img src="./img/icon/times-icon.png" alt="">
-                    </button>
-                    <div class="d-flex">
-                        <div class="col-left">
-                            <div class="header-title">Đăng nhập</div>
-                            <div class="header-desc">
-                                <span>Người mới?</span>
-                                <a href="">Tạo tài khoản ở đây!</a>
-                            </div>
-                            <form>
-                                <input type="email" class="form-control" id="email" placeholder="Email">
-                                <input type="password" class="form-control" id="password" placeholder="Password">
-                                <a href="javascript:void(forgotPassword())">Quên mật khẩu?</a>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
-                                    <span class="check-input-custom"></span>
-                                    <label class="form-check-label" for="exampleCheck1">Giữ tôi luôn đăng nhập</label>
-                                </div>
-                                <button class="btn btn-block btn-login" type="button" onclick="loginSuccess()">Đăng nhập</button>
-                            </form>
-                            <div class="login-space">Hoặc đăng nhập với</div>
-                            <div class="login-social">
-                                <div class="social-item"><a href="javascript:void(socialModal())"><img
-                                            src="./img/icon/google-icon-light.png" alt=""></a></div>
-                                <div class="social-item"><a href="javascript:void(socialModal())"><img
-                                            src="./img/icon/fb-icon-light.png" alt=""></a>
-                                </div>
-                                <div class="social-item"><a href="javascript:void(socialModal())"><img
-                                            src="./img/icon/in-icon-light.png" alt=""></a>
-                                </div>
-                                <div class="social-item"><a href="javascript:void(socialModal())"><img
-                                            src="./img/icon/twitter-icon-light.png" alt=""></a></div>
-                            </div>
-                        </div>
-                        <div class="col-right">
-                            <div class="link-left d-none"><a href="./src/home/home_login.html">Trở về trang chủ</a></div>
-                            <img src="./img/bg-login.png" alt="">
-                            <div class="link-right d-none"><a href="">Mua sắm ngay!</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END - Login Modal -->
-    <!-- Register Modal -->
-    <!-- END - Register Modal -->
-
 </body>
 
 <script>
@@ -494,10 +462,10 @@
         // Like
         $(".product-info .icon").click(function () {
             if ($(this).hasClass('active')) {
-                $(this).find('img').attr('src', './img/icon/heart.png');
+                $(this).find('img').attr('src', '../../img/icon/heart.png');
                 $(this).removeClass('active');
             } else {
-                $(this).find('img').attr('src', './img/icon/heart-fill.png');
+                $(this).find('img').attr('src', '../../img/icon/heart-fill.png');
                 $(this).addClass('active');
             }
         });
