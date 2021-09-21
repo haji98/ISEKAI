@@ -7,6 +7,10 @@ header {
     background-color: #04C4D9;
 }
 
+header.nav-light {
+    background-color: #EBF9FB;
+}
+
 .container-custom {
     padding-left : 0.625rem;
     padding-right: 0.625rem;
@@ -49,6 +53,30 @@ header {
     color: #EBF9FB;
 }
 
+.navbar-nav .btn.nav-item:hover,
+.navbar-nav .btn.nav-item.active {
+    color           : #1F1F26;
+    background-color: #EBF9FB;
+}
+
+.navbar-nav .btn.nav-item,
+.navbar-nav .btn.nav-item:hover,
+.navbar-nav .btn.nav-item:focus {
+    outline   : 0;
+    box-shadow: none
+}
+
+.bg-light .navbar-nav .nav-item:hover,
+.bg-light .navbar-nav .nav-item.active {
+    color: #1E69A2;
+}
+
+.bg-light .navbar-nav .btn.nav-item:hover,
+.bg-light .navbar-nav .btn.nav-item.active {
+    color           : #EBF9FB;
+    background-color: #1E69A2;
+}
+
 .dropdown:hover>.dropdown-menu {
     display    : block;
     margin-top : -60px;
@@ -72,6 +100,10 @@ header {
     font-weight: bold;
     color      : #FFFFFF;
     margin-left: 25px;
+}
+
+.bg-light #nav-user .username {
+    color: #1E69A2;
 }
 
 .nav-user {
@@ -141,7 +173,7 @@ header {
 .nav-user .dropdown-item:hover {
     font-weight     : bold;
     background-color: transparent;
-    color      : #FFFFFF;
+    color           : #FFFFFF;
 }
 
 /* END - Header */
@@ -219,7 +251,102 @@ footer .container-custom {
     margin-left    : 87px;
 }
 
+.footer-sencond.footer-blue {
+    background-color: #04C4D9;
+    color           : #FFFFFF;
+}
+
+.footer-sencond.footer-blue a {
+    color: #FFFFFF;
+}
+
 /* END - Footer */
 
-/* =========== SHOP  =========== */
-/* =========== END - SHOP  =========== */
+/* =========== Chat  =========== */
+.chat-btn {
+    position        : fixed;
+    right           : 45px;
+    bottom          : 25px;
+    background-color: #04C4D9;
+    border-radius   : 8px;
+    padding         : 13px 12px;
+    font-family     : "Segoe UI";
+    font-size       : 24px;
+    color           : #FFFFFF;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    cursor          : pointer;
+}
+
+.chat-btn img {
+    margin-right: 10px;
+}
+
+.chat-popup {
+    position        : fixed;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+    visibility      : hidden;
+    background-color: #EBF9FB;
+    opacity         : 0;
+    right           : 5px;
+    bottom          : 10px;
+    width           : 500px;
+    height          : 555px;
+    border-radius   : 8px;
+    transition      : opacity 0.3s;
+    box-shadow      : 0 5px 10px #3337;
+}
+
+.chat-popup.popup-box-on {
+    visibility: visible;
+    opacity   : 1;
+}
+
+.chat-popup .popup-head {
+    background-color: #1E69A2;
+    border-radius   : 8px 8px 0 0;
+    padding         : 21px 40px;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+
+.popup-head .popup-head-left img {
+    max-height: 21px;
+}
+
+.chat-popup .popup-messages {
+    background-image: url(../img/bg-shop.png);
+    background-size : contain;
+    padding         : 35px;
+    padding-bottom  : 15px;
+}
+
+.chat-popup .popup-messages img:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.chat-popup .popup-footer {
+    background-color: #1E69A2;
+    border-radius   : 0 0 8px 8px;
+    padding         : 11px 28px;
+    display         : flex;
+    align-items     : center;
+    gap             : 20px;
+}
+
+.popup-footer .btn {
+    padding: 0;
+}
+
+.popup-footer input {
+    background-color: #EBF9FB;
+    border-radius   : 8px;
+    width           : 100%;
+    height          : 38px;
+}
+
+/* =========== END - Chat  =========== */

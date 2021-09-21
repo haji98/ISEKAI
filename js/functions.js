@@ -11,6 +11,14 @@ $(function () {
         var img = $(this).attr('src');
         $('#register_step_3 .select-img img').attr('src', img);
     })
+
+    // Chat popup
+    $("#open-popup").click(function () {
+        $('#chat-popup').toggleClass('popup-box-on');
+    });
+    $("#close-popup").click(function () {
+        $('#chat-popup').removeClass('popup-box-on');
+    });
 })
 
 function forgotPassword() {

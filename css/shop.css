@@ -1,0 +1,189 @@
+/* Banner */
+.banner-section {
+    background-image   : url(../img/poster-04.jpg);
+    background-repeat  : no-repeat;
+    background-position: center -31.25rem;
+    background-size    : 100% auto;
+    object-fit         : cover;
+    height             : 61.25rem;
+    width              : 100%;
+    padding            : 7.813rem 10rem;
+}
+
+.banner-info {
+    margin         : auto;
+    border         : 20px solid #FFFFFF;
+    text-align     : center;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    height         : 100%;
+}
+
+.banner-header {
+    font-family: "Tw Cen MT";
+    font-size  : 12.125rem;
+    color      : #EBF9FB;
+}
+
+/* END - Banner */
+
+/* Main */
+main {
+    padding         : 10.625rem 8.75rem 75px 8.75rem;
+    background-image: url(../img/bg-shop.png);
+    background-color: #EBF9FB;
+    display         : flex;
+    justify-content : space-between;
+}
+
+.main-col-left {
+    background-color: #FFFFFF;
+    padding         : 66px 47px;
+}
+
+.tree-list {
+    color        : #04C4D9;
+    font-size    : 500;
+    margin-bottom: 20px;
+}
+
+.tree-list ul {
+    padding      : 0;
+    margin-bottom: 15px;
+}
+
+.tree-header {
+    font-size  : 30px;
+    font-weight: bold;
+}
+
+.tree-list .item {
+    display      : flex;
+    font-size    : 20px;
+    align-items  : center;
+    margin-bottom: 10px;
+}
+
+.tree-list .item::before {
+    content         : '';
+    width           : 27px;
+    height          : 27px;
+    background-color: #04C4D9;
+    border-radius   : 5px;
+    margin-right    : 15px;
+    display         : inline-block;
+}
+
+.tree-plus {
+    font-size  : 20px;
+    font-weight: bold;
+}
+
+.search-area {
+    padding-left : 200px;
+    padding-right: 200px;
+}
+
+.search-area .input-group-text {
+    border          : 1.5px solid #04C4D9;
+    padding         : 15px 23px;
+    background-color: #FFFFFF;
+    border-radius   : 8px;
+    border-right    : none;
+}
+
+.search-area .input-group-text img {
+    height: 100%;
+    width : auto;
+}
+
+.search-area input {
+    border          : 1.5px solid #04C4D9;
+    padding         : 15px 23px;
+    background-color: #FFFFFF;
+    border-radius   : 8px;
+    border-left     : none;
+    height          : auto;
+}
+
+.products {
+    margin-top           : 75px;
+    margin-bottom        : 210px;
+    display              : grid;
+    grid-template-columns: repeat(3, minmax(auto, 380px));
+    grid-template-rows   : minmax(auto, 525px);
+    row-gap              : 95px;
+}
+
+.product-item {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    cursor         : pointer;
+}
+
+.product-img {
+    width: 100%;
+}
+
+.product-img img {
+    width     : auto;
+    height    : auto;
+    max-width : 100%;
+    max-height: 100%;
+}
+
+.product-info {
+    text-align: center;
+    color     : #1E69A2;
+}
+
+.product-name {
+    font-size: 32px;
+}
+
+.product-price {
+    font-family: "Segoe UI";
+    font-size  : 28px;
+}
+
+.pagination {
+    gap: 28px;
+}
+
+.page-item {
+    width          : 63px;
+    height         : 63px;
+    background     : #FFFFFF;
+    border-radius  : 8px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.page-item .page-link {
+    font-size  : 25px;
+    color      : #1F1F26;
+    background : transparent;
+    border     : none;
+    font-weight: bold;
+}
+
+.page-item.active {
+    background: #04C4D9;
+}
+
+.page-item.active .page-link {
+    color: #FFFFFF;
+    background : transparent;
+    border     : none;
+}
+
+.page-item.disabled,
+.page-item.disabled .page-link {
+    background: transparent;
+
+}
+
+/* END - Main */
