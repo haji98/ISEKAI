@@ -190,6 +190,19 @@ footer .container-custom {
     color           : #1F1F26;
 }
 
+.footer-first input {
+    border-radius   : 8px;
+    background-color: #FFFFFF;
+    height          : 48px;
+    margin-bottom   : 30px;
+    max-width       : 500px;
+}
+
+.footer-logo {
+    font-size  : 50px;
+    font-weight: bold;
+}
+
 .footer-logo img {
     max-width: 12.875rem;
 }
@@ -203,11 +216,9 @@ footer .container-custom {
 }
 
 .footer-desc {
-    margin-top   : 52px;
-    margin-bottom: 33px;
-    font-size    : 1.875rem;
-    font-weight  : 500;
-    max-width    : 545px;
+    margin-top   : 20px;
+    margin-bottom: 55px;
+    font-size    : 23px;
 }
 
 .footer-social {
@@ -237,8 +248,7 @@ footer .container-custom {
 }
 
 .footer-first ol {
-    font-size    : 1.563rem;
-    font-weight  : bold;
+    font-size    : 25px;
     margin-bottom: 2.5rem;
     padding      : 0;
 }

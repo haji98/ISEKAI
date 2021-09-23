@@ -1,10 +1,10 @@
 $(function () {
     if (window.localStorage.getItem('login')) {
         $('.not_login').addClass('d-none');
-        $('#logged').removeClass('d-none');
+        $('.logged').removeClass('d-none');
     } else {
         $('.not_login').removeClass('d-none');
-        $('#logged').addClass('d-none');
+        $('.logged').addClass('d-none');
     }
 
     $('#register_step_3 .img-list img').on('click', function () {
@@ -134,7 +134,7 @@ function loginSuccess() {
 
     localStorage.setItem('login', true);
     $('.not_login').addClass('d-none');
-    $('#logged').removeClass('d-none');
+    $('.logged').removeClass('d-none');
 }
 
 function modalClose(id) {
@@ -156,6 +156,6 @@ function moveStep(step) {
     if (step == 5) {
         localStorage.setItem('login', true);
         $('.not_login').addClass('d-none');
-        $('#logged').removeClass('d-none');
+        $('.logged').removeClass('d-none');
     }
 }
