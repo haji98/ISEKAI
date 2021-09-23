@@ -10,7 +10,6 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./lib/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/detail.css" rel="stylesheet">
@@ -50,7 +49,7 @@
                             onclick="loginModal()">Đăng nhập</button>
                         <button class="btn nav-item nav-link not_login" data-toggle="modal" data-target="#registerModal"
                             onclick="moveStep(1)">Đăng ký</button>
-                        <div class="dropdown nav-user d-none" id="logged">
+                        <div class="dropdown nav-user logged d-none" id="logged">
                             <div class="d-flex align-items-center" id="nav-user" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <div class="ava"><img src="./img/img-login-success.png" alt=""></div>
@@ -75,8 +74,8 @@
                                         src="./img/icon/logout-icon.png" alt=""><span>Đăng xuất</span></a>
                             </div>
                         </div>
-                        <a class="nav-item nav-link" href="cart.html"><img src="./img/icon/shopping-cart.png"
-                                alt="Giỏ hàng"></a>
+                        <a class="nav-item nav-link logged d-none" href="cart.html"><img
+                                src="./img/icon/shopping-cart.png" alt="Giỏ hàng"></a>
                     </div>
                 </div>
             </nav>
@@ -115,7 +114,7 @@
                         <tr>
                             <th>Giá:</th>
                             <td style="display: flex; align-items: center; gap: 16px;">
-                                <span style="font-size: 35px;">199.000đ</span>
+                                <span style="font-size: 35px; color: var(--sub-orange);">199.000đ</span>
                                 <span
                                     style="font-size: 18px; font-weight: 500; text-decoration: line-through;">299.000</span>
                             </td>
@@ -135,7 +134,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text" id="increase_number">-</span>
                                     </div>
-                                    <input type="number" class="form-control" value="1" id="get_number">
+                                    <input type="number" class="form-control" value="0" id="get_number">
                                     <div class="input-group-append">
                                         <span class="input-group-text" id="decrease_number">+</span>
                                     </div>
@@ -146,7 +145,8 @@
                             <th>Vận chuyển:</th>
                             <td style="display: flex; align-items: center; gap: 22px;">
                                 <img src="./img/icon/freeship.png" alt="">
-                                <span style="font-size: 22px; font-weight: bold; color: #04C4D9;">
+                                <span
+                                    style="font-size: 22px; font-weight: bold; color: var(--main-mint-1); font-family: 'SVN Gotham Book';">
                                     Miễn phí vận chuyển</span>
                                 <img src="./img/icon/arrow-right.png" alt="">
                             </td>
@@ -186,20 +186,26 @@
                 <p>Chất liệu: Polyester</p>
                 <p>Size: S/M/L</p>
                 <p>Màu: 1 màu</p>
-                <p>Miêu tả: Sản phẩm này được làm bằng loại vải rất quý hiếm là vải xạo ke. Và nhiều chất liệu thuộc vào
-                    hàng luxury đem đến sự thoải mái cho người sử dụng.</p>
+                <p>Miêu tả: Sản phẩm được làm bằng loại vải khô thoáng, nhẹ êm. Dáng rộng thoải mái co giãn.</p>
             </div>
             <div class="desc-content">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                <div class="title">Thông tin chi tiết:</div>
+                <br>
+                &nbsp; &nbsp; &nbsp; &nbsp;Các bạn lưu ý giúp mình hạn chế giặt máy đối với đồ cos, đồ nhiều hoạ tiết sẽ
+                làm mất form
+                áo, còn những
+                quần áo basic thì khuyến khích giặt máy nhé! Vì giặt tay vải áo nặng vắt lực tay không thể ráo nước được
+                trên quần khi phơi sẽ dồn hết lực về phần cuối áo khi bị ướt thì sẽ bị chảy vải làm vải bị giãn!!!!
+                <br>
+                &nbsp; &nbsp; &nbsp; &nbsp;Các bạn vui lòng lộn bề trái của áo và giặt chế độ NHẸ và vắt khô tuyệt đối
+                không đc sấy !
+                vì lực của
+                máy giặt tác động lên bề mặt vải sẽ khiến vải nhanh hư hỏng như những tình trạng vón cục trên bề măt vải
+                và quan trọng hơn nữa là tình trạng vải bị co rút ạ.
+                <br>
+                - chính sách đổi hàng 3 ngày kể từ ngày nhận hàng ạ, các bạn nhận hàng vui lòng kiểm tra quần áo xem có
+                bị vấn đề gì không để tụi mình đổi sản phẩm mới cho các bạn 1 cách nhanh chóng nhất có thể nhé ^^
+
             </div>
         </section>
         <section class="product-cmt">

@@ -3,6 +3,7 @@ main {
 }
 
 .main-header {
+    font-family   : "Noto Sans";
     padding-top   : 82px;
     padding-bottom: 47px;
     text-align    : center;
@@ -19,6 +20,7 @@ main {
 }
 
 .main-search input {
+    font-family  : "Noto Sans";
     border       : 1px solid #707070;
     border-radius: 20px;
     font-size    : 33px;
@@ -37,34 +39,39 @@ main {
 }
 
 .main-content {
-    background-color: #EBF9FB;
+    background-color: var(--main-mint-2);
     padding         : 30px 70px 200px 70px;
     display         : flex;
-    color           : #343439;
+    color           : var(--color-black);
 }
 
 .content-title {
+    font-family: "Noto Sans";
     font-size  : 32px;
     font-weight: bold;
 }
 
 .content-left {
+    font-family : "Noto Sans";
     margin-right: 70px;
     font-size   : 25px;
 }
 
 .main-content ul {
-    padding   : 0;
-    margin-top: 50px;
-    width     : max-content;
+    font-family: "Noto Sans";
+    padding    : 0;
+    margin-top : 50px;
+    width      : max-content;
 }
 
 .main-content li {
+    font-family  : "Noto Sans";
     display      : block;
     margin-bottom: 20px;
 }
 
 .content-right {
+    font-family : "Noto Sans";
     border-left : 1px solid #707070;
     padding-left: 75px;
     width       : -webkit-fill-available;
@@ -72,14 +79,22 @@ main {
 }
 
 .content-right .content-title {
+    font-family  : "Noto Sans";
     font-size    : 38px;
-    color        : #1F1F26;
+    color        : var(--main-black);
     margin-bottom: 30px;
 }
 
 .content-right a {
-    color          : #1E69A2;
+    font-family    : "Noto Sans";
+    color          : var(--sub-blue);
     text-decoration: underline;
     margin-bottom  : 32px;
     display        : block;
+}
+
+.content-right .collapse p,
+.content-right .collapse span {
+    font-family: "Noto Sans";
+    font-size  : 30px;
 }

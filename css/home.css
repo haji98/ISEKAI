@@ -1,4 +1,8 @@
 /* =========== HOME  =========== */
+section {
+    font-family: "SVN Gotham Regular";
+}
+
 /* Banner */
 .banner-info {
     padding-top   : 8.125rem;
@@ -9,7 +13,7 @@
 .banner-header {
     font-size  : 6.25rem;
     font-weight: bold;
-    color      : #EBF9FB;
+    color      : var(--main-mint-2);
     padding    : 1.25rem;
 }
 
@@ -26,7 +30,7 @@
 .banner-desc span {
     font-size  : 1.875rem;
     font-weight: bold;
-    color      : #EBF9FB;
+    color      : var(--main-mint-2);
 }
 
 .banner-btn {
@@ -37,8 +41,8 @@
     padding         : 18px 23px;
     font-weight     : bold;
     font-size       : 1.375rem;
-    color           : #04C4D9;
-    background-color: #FFFFFF;
+    color           : var(--main-mint-1);
+    background-color: var(--main-white);
     border-radius   : 0.625rem;
 }
 
@@ -59,7 +63,7 @@
 
 .banner-section .splide__pagination__page.is-active {
     transform : scale(1);
-    background: #04C4D9;
+    background: var(--main-mint-1);
 }
 
 .banner-section .splide__arrow {
@@ -73,17 +77,18 @@
     text-align      : center;
     padding-top     : 6.25rem;
     padding-bottom  : 6.25rem;
-    background-color: #EBF9FB;
+    background-color: var(--main-mint-2);
 }
 
 .product-title {
-    color      : #04C4D9;
+    font-family: "SVN Gotham Bold";
+    color      : var(--main-mint-1);
     font-weight: bold;
     font-size  : 4.375rem;
 }
 
 .product-decs {
-    color    : #04C4D9;
+    color    : var(--main-mint-1);
     font-size: 1.875rem;
     max-width: 93.125rem;
     margin   : auto;
@@ -100,7 +105,7 @@
     text-decoration: none;
     font-size      : 1.875rem;
     font-weight    : bold;
-    color          : #04C4D9;
+    color          : var(--main-mint-1);
     padding-bottom : 0.938rem;
     display        : inline-block;
 }
@@ -109,7 +114,7 @@
     position        : absolute;
     transition      : left 0.25s ease-in-out, width 0.25s 0.10s;
     height          : 4px;
-    background-color: #04C4D9;
+    background-color: var(--main-mint-1);
     left            : 0;
     width           : 69px;
     pointer-events  : none;
@@ -120,7 +125,7 @@
 }
 
 .product-info {
-    background-color: #04C4D9;
+    background-color: var(--main-mint-1);
     padding-top     : 5.125rem;
     padding-bottom  : 5.125rem;
 }
@@ -128,7 +133,7 @@
 .product-info .icon {
     height       : 85px;
     width        : 85px;
-    background   : #FFFFFF;
+    background   : var(--main-white);
     border-radius: 50%;
     padding      : 24px;
     cursor       : pointer;
@@ -144,23 +149,25 @@
 }
 
 .product-info .desc .title {
+    font-family  : "SVN Gotham Bold";
     font-size    : 3.125rem;
     font-weight  : bold;
-    color        : #1F1F26;
+    color        : var(--main-black);
     margin-bottom: 1.25rem;
 }
 
 .product-info .desc .txt {
     font-size  : 1.563rem;
     font-weight: bold;
-    color      : #1F1F26;
+    color      : var(--main-black);
 }
 
 /* END - Product */
 
 /* Quotes */
 .quotes-section {
-    background-color: #EBF9FB;
+    background-color: var(--main-mint-2);
+    font-family     : "SVN Gotham Bold";
 }
 
 .quotes-content {
@@ -173,21 +180,22 @@
 .quotes-content .txt {
     font-size    : 2.625rem;
     font-weight  : bold;
-    color        : #04C4D9;
+    color        : var(--main-mint-1);
     margin-bottom: 6.25rem;
 }
 
 .quotes-content .author {
     font-size  : 2rem;
     font-weight: bold;
-    color      : #04C4D9;
+    color      : var(--main-mint-1);
 }
 
 /* END - Quotes */
 
 /* Statistic */
 .statistic-section {
-    background-color: #04C4D9;
+    background-color: var(--main-mint-1);
+    font-family     : "SVN Gotham Bold";
 }
 
 .statistic-content {
@@ -200,7 +208,7 @@
     font-size    : 4.875rem;
     font-weight  : bold;
     text-align   : center;
-    color        : #1F1F26;
+    color        : var(--main-black);
     margin-bottom: 1.625rem;
 }
 
@@ -208,7 +216,7 @@
     font-size  : 2rem;
     font-weight: bold;
     text-align : center;
-    color      : #1F1F26;
+    color      : var(--main-black);
 }
 
 .statistic-img {
@@ -222,7 +230,7 @@
 
 /* Idea */
 .idea-section {
-    background-color: #EBF9FB;
+    background-color: var(--main-mint-2);
 }
 
 .idea-content {
@@ -233,9 +241,10 @@
 }
 
 .idea-content .title {
+    font-family  : "SVN Gotham Bold";
     font-size    : 4.375rem;
     font-weight  : bold;
-    color        : #04C4D9;
+    color        : var(--main-mint-1);
     text-align   : center;
     margin-bottom: 2.25rem;
 }
@@ -243,7 +252,7 @@
 .idea-content .txt {
     font-size  : 1.875rem;
     font-weight: 500;
-    color      : #04C4D9;
+    color      : var(--main-mint-1);
     text-align : center;
 }
 
@@ -262,7 +271,7 @@
 
 /* News */
 .news-section {
-    background-color: #EBF9FB;
+    background-color: var(--main-mint-2);
 }
 
 .news-content {
@@ -273,16 +282,17 @@
 }
 
 .news-content .title {
+    font-family: "SVN Gotham Bold";
     font-size  : 4.375rem;
     font-weight: bold;
-    color      : #04C4D9;
+    color      : var(--main-mint-1);
     text-align : center;
 }
 
 .news-content .txt {
     font-size  : 1.875rem;
     font-weight: 500;
-    color      : #04C4D9;
+    color      : var(--main-mint-1);
     text-align : center;
     margin     : 2.25rem 0;
 }
@@ -293,21 +303,22 @@
 }
 
 .news-card-body {
+    font-family     : "SVN Gotham Book";
     padding         : 45px 30px;
-    border          : 2px solid #1E69A2;
+    border          : 2px solid var(--sub-blue);
     border-radius   : 5px;
     min-height      : 30.25rem;
     max-width       : 485px;
     display         : flex;
     flex-flow       : column;
     justify-content : space-between;
-    background-color: #FFFFFF;
+    background-color: var(--main-white);
     margin          : auto;
 
 }
 
 .news-txt {
-    color    : #04C4D9;
+    color    : var(--main-mint-1);
     font-size: 1.563rem;
 }
 
@@ -338,13 +349,13 @@
 .news-footer .info .name {
     font-size  : 1.375rem;
     font-weight: bold;
-    color      : #04C4D9;
+    color      : var(--main-mint-1);
 }
 
 .news-footer .info .time {
     font-size  : 1.125rem;
     font-weight: bold;
-    color      : #04C4D9;
+    color      : var(--main-mint-1);
 }
 
 .news-btn {
@@ -354,7 +365,7 @@
 }
 
 .news-btn button {
-    background-color: #04C4D9;
+    background-color: var(--main-mint-1);
     border-radius   : 10px;
     color           : #FCFCFC;
     font-size       : 1.375rem;

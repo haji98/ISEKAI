@@ -5,8 +5,8 @@
 
 .login-modal .modal-content {
     width           : 1258px;
-    background-color: #04C4D9;
-    border          : 2px solid #1F1F26;
+    background-color: var(--main-mint-1);
+    border          : 2px solid var(--main-black);
 }
 
 .login-modal .modal-body {
@@ -20,13 +20,14 @@
     height          : 67px;
     width           : 67px;
     border-radius   : 50%;
-    background-color: #FFFFFF;
+    background-color: var(--main-white);
     opacity         : 1;
 }
 
 /* =========== LOGIN  =========== */
 .login-modal .col-left {
-    width: 400px;
+    font-family: "SVN Gotham Regular";
+    width      : 400px;
 }
 
 .login-modal .col-right {
@@ -34,9 +35,10 @@
 }
 
 .login-modal .header-title {
+    font-family  : "SVN Gotham Bold";
     font-size    : 44px;
     font-weight  : bold;
-    color        : #FFFFFF;
+    color        : var(--main-white);
     margin-top   : 40px;
     margin-bottom: 20px;
 }
@@ -45,7 +47,7 @@
     margin-bottom: 45px;
     font-weight  : bold;
     font-size    : 22px;
-    color        : #EBF9FB;
+    color        : var(--main-mint-2);
 }
 
 .login-modal .header-desc a {
@@ -59,13 +61,13 @@
 
 .login-modal form input.form-control {
     margin-bottom   : 22px;
-    border          : 2px solid #1E69A2;
+    border          : 2px solid var(--sub-blue);
     border-radius   : 5px;
-    background-color: #FFFFFF;
+    background-color: var(--main-white);
     padding         : 23px 23px;
     font-size       : 22px;
     font-weight     : 500;
-    color           : #04C4D9;
+    color           : var(--main-mint-1);
 }
 
 .login-modal form #password {
@@ -75,12 +77,13 @@
 .login-modal form input::placeholder {
     font-size  : 22px;
     font-weight: 500;
-    color      : #04C4D9;
+    color      : var(--main-mint-1);
 }
 
 .login-modal form a {
+    font-family    : "SVN Gotham Book Italic";
     font-size      : 18px;
-    color          : #FFFFFF;
+    color          : var(--main-white);
     text-decoration: underline;
 }
 
@@ -100,9 +103,9 @@
     height          : 34px;
     width           : 34px;
     border-radius   : 5px;
-    border          : 2px solid #1E69A2;
+    border          : 2px solid var(--sub-blue);
     background-color: #FFEFFF;
-    color           : #1E69A2;
+    color           : var(--sub-blue);
     margin          : 0;
     cursor          : pointer;
 }
@@ -114,13 +117,14 @@
 }
 
 .login-modal form .form-check .form-check-label {
-    color      : #EBF9FB;
+    color      : var(--main-mint-2);
     font-size  : 19px;
     font-weight: bold;
     margin-left: 19px;
 }
 
 .login-modal .btn-login {
+    font-family     : "SVN Gotham Bold";
     background-color: #3C3C3C;
     color           : #FFEFFF;
     font-size       : 22px;
@@ -131,7 +135,7 @@
 }
 
 .login-modal .login-space {
-    color      : #EBF9FB;
+    color      : var(--main-mint-2);
     font-size  : 18px;
     font-weight: bold;
 }
@@ -140,8 +144,8 @@
 .login-modal .login-space::after {
     content   : "";
     display   : inline-block;
-    border-top: 2px solid #EBF9FB;
-    width     : calc(50% - 100px);
+    border-top: 2px solid var(--main-mint-2);
+    width     : calc(50% - 101px);
     transform : translateY(-6px);
 }
 
@@ -162,7 +166,7 @@
 .login-social .social-item {
     width           : 67px;
     height          : 67px;
-    background-color: #FFFFFF;
+    background-color: var(--main-white);
 }
 
 .login-modal .col-right img {
@@ -181,7 +185,7 @@
 }
 
 .forgot-modal .header-desc {
-    font-family: "Segoe UI";
+    font-family: "SVN Gotham Regular";
     font-weight: 400;
     height     : 145px;
 }
@@ -221,15 +225,14 @@
 }
 
 .PIN-confirm .header-title {
-    font-family: "Segoe UI";
+    font-family: "SVN Gotham Bold";
     font-size  : 54px;
     font-weight: bold;
 }
 
 .PIN-confirm .header-desc {
-    font-family: "Segoe UI";
     font-size  : 26px;
-    max-width  : 540px;
+    max-width  : 710px;
     font-weight: 400;
     margin     : auto;
     height     : 145px;
@@ -280,10 +283,11 @@
 }
 
 .col-right a {
+    font-family    : "SVN Gotham Bold";
     text-decoration: none;
     font-size      : 35px;
     font-weight    : bold;
-    color          : #04C4D9;
+    color          : var(--main-mint-1);
     max-width      : 200px;
 }
 
@@ -295,7 +299,7 @@
 }
 
 .login-success .col-right img {
-    background-color: #FFFFFF;
+    background-color: var(--main-white);
     width           : 350px;
     height          : 350px;
     border-radius   : 8px;
@@ -305,9 +309,10 @@
 .login-success .col-right::after {
     position   : absolute;
     content    : "Venti_02";
+    font-family: "SVN Gotham Bold";
     font-size  : 44px;
     font-weight: bold;
-    color      : #EBF9FB;
+    color      : var(--main-mint-2);
     bottom     : calc(-66px - 56px);
     left       : calc(50% - 92px);
 }
@@ -319,19 +324,19 @@
 }
 
 .register-modal .modal-body {
-    background-color: #EBF9FB;
+    background-color: var(--main-mint-2);
 }
 
 .register-modal .header-title,
 .register-modal .header-desc,
 .register-modal .btn-login,
 .register-modal .login-space {
-    color: #04C4D9;
+    color: var(--main-mint-1);
 }
 
 .register-modal .login-space::before,
 .register-modal .login-space::after {
-    border-color: #04C4D9;
+    border-color: var(--main-mint-1);
 }
 
 .register-modal form #password {
@@ -339,7 +344,7 @@
 }
 
 .register-modal .social-item {
-    background-color: #04C4D9;
+    background-color: var(--main-mint-1);
 }
 
 .register-modal .col-right {
@@ -351,12 +356,12 @@
 }
 
 .register-modal .modal-body .close {
-    background-color: #04C4D9;
+    background-color: var(--main-mint-1);
 }
 
 .register_step {
     font-weight: bold;
-    color      : #04C4D9;
+    color      : var(--main-mint-1);
 }
 
 .register_step .header-desc {
@@ -382,13 +387,13 @@
     height          : 250px;
     object-fit      : contain;
     border-radius   : 8px;
-    background-color: #04C4D9;
+    background-color: var(--main-mint-1);
 }
 
 .register_step .select-img .bg-white {
     width           : 250px;
     height          : 250px;
-    background-color: #FFFFFF;
+    background-color: var(--main-white);
     border-radius   : 8px;
     font-size       : 30px;
     display         : flex;
@@ -399,16 +404,16 @@
 .register_step .select-img .btn {
     font-size       : 30px;
     padding         : 6px 30px;
-    background-color: #04C4D9;
+    background-color: var(--main-mint-1);
     border-radius   : 8px;
     margin-top      : 50px;
-    color           : #FFFFFF;
+    color           : var(--main-white);
 }
 
 .register_step .img-list {
     height          : 215px;
     margin-top      : 50px;
-    background-color: #343439;
+    background-color: var(--color-black);
     border-radius   : 8px;
     padding         : 29px 84px;
     display         : flex;
@@ -421,7 +426,7 @@
     height          : 74px;
     object-fit      : contain;
     border-radius   : 8px;
-    background-color: #04C4D9;
+    background-color: var(--main-mint-1);
     cursor          : pointer;
 }
 
@@ -450,7 +455,7 @@
     text-decoration: none;
     font-size      : 35px;
     font-weight    : bold;
-    color          : #EBF9FB;
+    color          : var(--main-mint-2);
     max-width      : 200px;
 }
 

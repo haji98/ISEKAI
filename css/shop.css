@@ -12,7 +12,7 @@
 
 .banner-info {
     margin         : auto;
-    border         : 20px solid #FFFFFF;
+    border         : 20px solid var(--main-white);
     text-align     : center;
     display        : flex;
     align-items    : center;
@@ -23,7 +23,7 @@
 .banner-header {
     font-family: "Tw Cen MT";
     font-size  : 12.125rem;
-    color      : #EBF9FB;
+    color      : var(--main-mint-2);
 }
 
 /* END - Banner */
@@ -32,18 +32,18 @@
 main {
     padding         : 10.625rem 8.75rem 75px 8.75rem;
     background-image: url(../img/bg-shop.png);
-    background-color: #EBF9FB;
+    background-color: var(--main-mint-2);
     display         : flex;
     justify-content : space-between;
 }
 
 .main-col-left {
-    background-color: #FFFFFF;
+    background-color: var(--main-white);
     padding         : 66px 47px;
 }
 
 .tree-list {
-    color        : #04C4D9;
+    color        : var(--main-mint-1);
     font-size    : 500;
     margin-bottom: 20px;
 }
@@ -54,11 +54,13 @@ main {
 }
 
 .tree-header {
+    font-family: "SVN Gotham Bold";
     font-size  : 30px;
     font-weight: bold;
 }
 
 .tree-list .item {
+    font-family  : "SVN Gotham Book";
     display      : flex;
     font-size    : 20px;
     align-items  : center;
@@ -69,7 +71,7 @@ main {
     content         : '';
     width           : 27px;
     height          : 27px;
-    background-color: #04C4D9;
+    background-color: var(--main-mint-1);
     border-radius   : 5px;
     margin-right    : 15px;
     display         : inline-block;
@@ -86,9 +88,9 @@ main {
 }
 
 .search-area .input-group-text {
-    border          : 1.5px solid #04C4D9;
+    border          : 1.5px solid var(--main-mint-1);
     padding         : 15px 23px;
-    background-color: #FFFFFF;
+    background-color: var(--main-white);
     border-radius   : 8px;
     border-right    : none;
 }
@@ -99,9 +101,9 @@ main {
 }
 
 .search-area input {
-    border          : 1.5px solid #04C4D9;
+    border          : 1.5px solid var(--main-mint-1);
     padding         : 15px 23px;
-    background-color: #FFFFFF;
+    background-color: var(--main-white);
     border-radius   : 8px;
     border-left     : none;
     height          : auto;
@@ -136,15 +138,16 @@ main {
 
 .product-info {
     text-align: center;
-    color     : #1E69A2;
+    color     : var(--sub-blue);
 }
 
 .product-name {
-    font-size: 32px;
+    font-family: "SVN Gotham Book";
+    font-size  : 32px;
 }
 
 .product-price {
-    font-family: "Segoe UI";
+    font-family: "SVN Gotham Black";
     font-size  : 28px;
 }
 
@@ -155,7 +158,7 @@ main {
 .page-item {
     width          : 63px;
     height         : 63px;
-    background     : #FFFFFF;
+    background     : var(--main-white);
     border-radius  : 8px;
     display        : flex;
     justify-content: center;
@@ -163,21 +166,23 @@ main {
 }
 
 .page-item .page-link {
+    font-family: "Noto Sans";
+    font-weight: bold;
     font-size  : 25px;
-    color      : #1F1F26;
+    color      : var(--main-black);
     background : transparent;
     border     : none;
     font-weight: bold;
 }
 
 .page-item.active {
-    background: #04C4D9;
+    background: var(--main-mint-1);
 }
 
 .page-item.active .page-link {
-    color: #FFFFFF;
-    background : transparent;
-    border     : none;
+    color     : var(--main-white);
+    background: transparent;
+    border    : none;
 }
 
 .page-item.disabled,

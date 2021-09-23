@@ -1,5 +1,5 @@
 main {
-    background-color: #EBF9FB;
+    background-color: var(--main-mint-2);
     background-image: url(../img/bg-shop.png);
     background-size : 100% auto;
 }
@@ -20,7 +20,7 @@ main {
 }
 
 .default-img img {
-    background-color: #FFFFFF;
+    background-color: var(--main-white);
     object-fit      : contain;
     width           : 100%;
     height          : 564px;
@@ -33,7 +33,7 @@ main {
 }
 
 .img-list img {
-    background-color: #FFFFFF;
+    background-color: var(--main-white);
     object-fit      : contain;
 }
 
@@ -42,7 +42,7 @@ main {
 }
 
 .preview-right hr {
-    border-top   : 1.5px solid #1E69A2;
+    border-top   : 1.5px solid var(--sub-blue);
     margin-top   : 40px;
     margin-bottom: 40px;
 }
@@ -53,6 +53,7 @@ main {
 }
 
 .preview-title {
+    font-family  : "SVN Gotham Bold";
     font-size    : 46px;
     font-weight  : bold;
     color        : #000000;
@@ -77,8 +78,8 @@ main {
 }
 
 .preview-detail table td .btn {
-    border          : 1px solid #04C4D9;
-    background-color: #FFFFFF;
+    border          : 1px solid var(--main-mint-1);
+    background-color: var(--main-white);
     font-size       : 18px;
     font-weight     : 400;
     padding         : 6px 35px;
@@ -86,8 +87,9 @@ main {
 }
 
 .preview-ship table {
-    font-size: 24px;
-    color    : #1F1F26;
+    font-family: "SVN Gotham Book";
+    font-size  : 24px;
+    color      : var(--main-black);
 }
 
 .preview-btn {
@@ -95,9 +97,10 @@ main {
 }
 
 .preview-btn .btn {
-    background-color: #1E69A2;
+    font-family     : "SVN Gotham Bold";
+    background-color: var(--sub-blue);
     border-radius   : 8px;
-    color           : #FFFFFF;
+    color           : var(--main-white);
     font-size       : 22px;
     font-weight     : bold;
     padding         : 21px 137px;
@@ -114,9 +117,9 @@ main {
 }
 
 .number-input.input-group .input-group-text {
-    border          : 1px solid #04C4D9;
+    border          : 1px solid var(--main-mint-1);
     border-radius   : 0;
-    background-color: #FFFFFF;
+    background-color: var(--main-white);
     height          : 36px;
     padding-left    : 13px;
     padding-right   : 13px;
@@ -127,9 +130,9 @@ main {
 .number-input.input-group .form-control {
     font-size       : 24px;
     font-weight     : 400;
-    color           : #1F1F26;
-    background-color: #FFFFFF;
-    border          : 1px solid #04C4D9;
+    color           : var(--main-black);
+    background-color: var(--main-white);
+    border          : 1px solid var(--main-mint-1);
     border-radius   : 0;
     height          : 36px;
     text-align      : center;
@@ -146,13 +149,14 @@ main {
 /* Product Description */
 .product-desc {
     margin-top      : 8.75rem;
-    background-color: #FFFFFF;
+    background-color: var(--main-white);
     padding         : 4.75rem 8.75rem 8.25rem 8.75rem;
-    color           : #1F1F26;
+    color           : var(--main-black);
     font-size       : 35px;
 }
 
 .desc-title {
+    font-family  : "SVN Gotham Bold";
     font-size    : 52px;
     font-weight  : bold;
     margin-bottom: 45px;
@@ -165,6 +169,15 @@ main {
 
 .desc-info p {
     margin-bottom: 35px;
+}
+
+.desc-content {
+    font-family: "SVN Gotham Book";
+    font-size  : 35px;
+}
+
+.desc-content .title {
+    font-size: 40px;
 }
 
 /* END - Product Description */
@@ -182,7 +195,8 @@ main {
 }
 
 .cmt-title span {
-    font-size: 50px;
+    font-family: "SVN Gotham Bold";
+    font-size  : 50px;
 }
 
 .cmt-title img {
@@ -195,8 +209,6 @@ main {
     gap          : 60px;
 }
 
-.cmt-area .ava {}
-
 .cmt-area .ava img {
     width        : 156px;
     height       : 156px;
@@ -205,7 +217,7 @@ main {
 }
 
 .cmt-content {
-    background-color: #FFFFFF;
+    background-color: var(--main-white);
     border-radius   : 20px;
     padding         : 50px;
     width           : -webkit-fill-available;
@@ -213,6 +225,7 @@ main {
 }
 
 .cmt-name {
+    font-family: "SVN Gotham Bold";
     font-size  : 46px;
     font-weight: bold;
 }
@@ -224,9 +237,8 @@ main {
     gap        : 20px;
 }
 
-.cmt-start img {}
-
 .cmt-txt {
+    font-family  : "SVN Gotham Book";
     font-size    : 50px;
     margin-top   : 50px;
     margin-bottom: 180px;
@@ -239,7 +251,7 @@ main {
 }
 
 .cmt-img img {
-    border    : 3px solid#04C4D9;
+    border    : 3px solidvar(--main-mint-1);
     object-fit: contain;
 }
 
@@ -248,9 +260,9 @@ main {
 }
 
 .cmt-loading .btn {
-    background-color: #04C4D9;
+    background-color: var(--main-mint-1);
     border-radius   : 8px;
-    color           : #FFFFFF;
+    color           : var(--main-white);
     width           : 146px;
     height          : 58px;
     text-align      : center;
@@ -264,6 +276,7 @@ main {
 }
 
 .other-title {
+    font-family: "SVN Gotham Bold";
     font-size  : 62px;
     font-weight: bold;
     text-align : center;
