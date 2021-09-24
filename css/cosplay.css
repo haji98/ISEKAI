@@ -1,0 +1,204 @@
+.banner-section {
+    position           : relative;
+    background-image   : url(../img/banner-cosplay.png);
+    width              : 100%;
+    height             : 910px;
+    background-position: center bottom;
+    background-repeat  : no-repeat;
+    object-fit         : contain;
+}
+
+.banner-info {
+    position           : absolute;
+    background-image   : url(../img/banner-path.png);
+    width              : 620px;
+    height             : 400px;
+    top                : 70px;
+    left               : 100px;
+    background-position: center;
+    background-repeat  : no-repeat;
+    display            : flex;
+    align-items        : end;
+}
+
+.banner-info .banner-header {
+    font-family  : "SVN Gotham Thin";
+    font-size    : 40px;
+    color        : var(--main-white);
+    text-align   : center;
+    margin-bottom: 90px;
+}
+
+.banner-logo {
+    position: absolute;
+    width   : 1320px;
+    height  : 600px;
+    top     : 200px;
+    right   : 35px;
+}
+
+.banner-logo img {
+    position  : absolute;
+    top       : 30px;
+    right     : 60px;
+    max-height: 42px;
+}
+
+.banner-logo .social {
+    position: absolute;
+    bottom  : 30px;
+    right   : 60px;
+}
+
+.banner-logo .social img {
+    position: unset;
+}
+
+main {
+    background-color: var(--main-mint-2);
+    background-image: url(../img/bg-shop.png);
+    padding-top     : 240px;
+    padding-bottom  : 95px;
+}
+
+.card {
+    position      : relative;
+    background    : transparent;
+    border        : none;
+    display       : flex;
+    flex-direction: unset;
+    align-items   : flex-end;
+    max-width     : 1400px;
+    margin        : auto;
+    margin-bottom : 500px;
+}
+
+.card-left {
+    position: relative;
+    width   : fit-content;
+    height  : fit-content;
+}
+
+.card-img {
+    position  : relative;
+    display   : inline-block;
+    width     : 666px;
+    height    : 666px;
+    object-fit: contain;
+    filter    : brightness(0.7);
+}
+
+
+.img-left .card-img {
+    margin-left: 85px;
+}
+
+.img-left::before {
+    content : "";
+    position: absolute;
+    width   : 666px;
+    height  : 825px;
+    top     : 65px;
+    left    : 0;
+    border  : 10px solid var(--main-mint-1);
+
+}
+
+.img-left::after {
+    content            : "";
+    position           : absolute;
+    background-image   : url(../img/logo-white.png);
+    background-repeat  : no-repeat;
+    background-position: 24px 24px;
+    width              : 614px;
+    height             : 614px;
+    top                : 26px;
+    left               : 111px;
+    border             : 4px solid var(--main-white);
+}
+
+.card-right {
+    margin-left  : 75px;
+    margin-bottom: 60px;
+}
+
+.card-content .title {
+    display  : block;
+    font-size: 72px;
+    color    : var(--sub-orange);
+}
+
+.card-content .txt {
+    display    : block;
+    font-family: "SVN Gotham Book";
+    font-size  : 50px;
+    color      : var(--sub-blue);
+}
+
+.card-btn {
+    position: absolute;
+    bottom  : -180px;
+    left    : calc(50% - 300px);
+}
+
+.card-btn .btn {
+    position        : relative;
+    font-family     : "SVN Gotham Book";
+    font-size       : 43px;
+    color           : var(--main-white);
+    background-color: #FF9C50;
+    border-radius   : 0;
+    padding         : 36px 180px;
+}
+
+.btn-shadow-left::before {
+    content         : "";
+    position        : absolute;
+    background-color: var(--sub-blue);
+    top             : -13.5px;
+    left            : -15px;
+    width           : 100%;
+    height          : 100%;
+}
+
+.img-right .card-img {
+    margin-right: 85px;
+}
+
+.img-right::before {
+    content : "";
+    position: absolute;
+    width   : 666px;
+    height  : 825px;
+    top     : 65px;
+    right   : 0;
+    border  : 10px solid var(--main-mint-1);
+
+}
+
+.img-right::after {
+    content            : "";
+    position           : absolute;
+    background-image   : url(../img/logo-white.png);
+    background-repeat  : no-repeat;
+    background-position: calc(100% - 24px) 24px;
+    width              : 614px;
+    height             : 614px;
+    top                : 26px;
+    right              : 111px;
+    border             : 4px solid var(--main-white);
+}
+
+.card-content.text-right {
+    margin-right: 60px;
+}
+
+.btn-shadow-right::before {
+    content         : "";
+    position        : absolute;
+    background-color: var(--sub-blue);
+    top             : -13.5px;
+    right           : -15px;
+    width           : 100%;
+    height          : 100%;
+}
