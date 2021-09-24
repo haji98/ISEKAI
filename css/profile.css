@@ -1,0 +1,130 @@
+main {
+    background-color: var(--main-white);
+    background-image: url(../img/bg-shop.png);
+    padding-top     : 145px;
+    padding-bottom  : 430px;
+}
+
+.container-custom {
+    max-width: 1500px;
+    margin   : auto;
+}
+
+.main-title {
+    font-family  : "Noto Sans";
+    font-size    : 50px;
+    font-weight  : bolder;
+    margin-bottom: 75px;
+}
+
+.main-title img {
+    margin-right: 48px;
+}
+
+.main-content {
+    display: flex;
+}
+
+.main-ava {
+    width         : 500px;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+.main-ava img {
+    background-color: var(--main-mint-1);
+    width           : 380px;
+    height          : 380px;
+    object-fit      : cover;
+    border-radius   : 8px;
+}
+
+.main-ava span {
+    font-family: "Noto Sans";
+    font-size  : 43px;
+    font-weight: bolder;
+    color      : var(--sub-blue);
+}
+
+.main-form {
+    width      : 950px;
+    margin-left: 40px;
+}
+
+.main-form table {
+    font-family: "Noto Sans";
+    font-size  : 30px;
+}
+
+.main-form td {
+    vertical-align: middle;
+}
+
+.main-form td input {
+    font-family  : "Segoe UI";
+    font-size    : 28px;
+    font-weight  : bolder;
+    color        : #898991;
+    border-color : var(--sub-blue);
+    border-radius: 8px;
+    height       : 64px;
+}
+
+.main-form td textarea {
+    font-family  : "Segoe UI";
+    font-size    : 28px;
+    font-weight  : bolder;
+    color        : #898991;
+    border-color : var(--sub-blue);
+    border-radius: 8px;
+}
+
+.main-form .form-check .form-check-label {
+    margin-right: 27px;
+}
+
+.main-form .form-check .form-check-input {
+    width : 42px;
+    height: 42px;
+}
+
+.main-form .form-check .form-check-input:checked {
+    background-color: var(--main-mint-1);
+}
+
+.change-password .title {
+    font-family: "Noto Sans";
+    font-size  : 44px;
+    font-weight: bolder;
+    text-align : center;
+}
+
+.change-password .desc {
+    font-family  : "Noto Sans";
+    font-size    : 24px;
+    text-align   : center;
+    margin-bottom: 80px;
+}
+
+.change-password table tr td:first-child {
+    max-width: 250px;
+}
+
+.change-password .btn {
+    font-family     : "Noto Sans";
+    font-size       : 29px;
+    font-weight     : bolder;
+    color           : var(--main-mint-2);
+    background-color: var(--sub-blue);
+    border-radius   : 8px;
+    padding         : 18px 56px;
+    margin-top      : 20px;
+}
+
+.change-password table .img-eye {
+    float   : right;
+    position: relative;
+    top     : -44px;
+    right   : 18px;
+}
