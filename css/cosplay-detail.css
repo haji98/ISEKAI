@@ -1,18 +1,17 @@
 /* Banner */
 .banner-section {
-    background-image   : url(../img/poster-04.jpg);
+    position           : relative;
+    background-image   : url(../img/cosplay-detail-01.png);
     background-repeat  : no-repeat;
-    background-position: center -31.25rem;
-    background-size    : 100% auto;
+    background-position: center center;
+    background-size    : auto 100%;
     object-fit         : cover;
-    height             : 61.25rem;
+    height             : 900px;
     width              : 100%;
-    padding            : 7.813rem 10rem;
 }
 
 .banner-info {
     margin         : auto;
-    border         : 20px solid var(--main-white);
     text-align     : center;
     display        : flex;
     align-items    : center;
@@ -21,9 +20,17 @@
 }
 
 .banner-header {
-    font-family: "Tw Cen MT";
-    font-size  : 12.125rem;
-    color      : var(--main-mint-2);
+    font-family              : "SVN Gotham Black";
+    font-size                : 292px;
+    color                    : transparent;
+    -webkit-text-stroke-width: 8px;
+    -webkit-text-stroke-color: var(--main-white);
+}
+
+.banner-social {
+    position: absolute;
+    bottom  : 100px;
+    right   : 167px;
 }
 
 /* END - Banner */
