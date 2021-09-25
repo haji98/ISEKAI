@@ -1,0 +1,169 @@
+main {
+    background-color: var(--main-white);
+    background-image: url(../img/bg-shop.png);
+    padding         : 50px 0;
+}
+
+.container-custom {
+    max-width: 1840px;
+    margin   : auto;
+}
+
+.contain-header {
+    text-align   : center;
+    margin-bottom: 95px;
+    color        : var(--main-black);
+}
+
+.contain-header .title {
+    font-family  : "SVN Gotham Bold";
+    font-size    : 50px;
+    margin-bottom: 20px;
+}
+
+.contain-header .desc {
+    font-family: "SVN Gotham Light";
+    font-size  : 30px;
+}
+
+.contain-item {
+    border-top   : 1px solid var(--sub-blue);
+    border-bottom: 1px solid var(--sub-blue);
+    padding      : 50px;
+    display      : flex;
+    margin-bottom: 1000px;
+
+}
+
+.contain-item .form-check {
+    padding: 50px;
+}
+
+.contain-item .item {
+    display    : flex;
+    margin-left: 35px;
+    align-items: center;
+}
+
+.item .item-img {
+    margin-right: 80px;
+}
+
+.item .item-img img {
+    height    : 268px;
+    width     : 268px;
+    object-fit: contain;
+}
+
+.item .item-info .title span {
+    font-family  : "SVN Gotham Bold";
+    font-size    : 40px;
+    margin-bottom: 30px;
+    margin-right : 25px;
+    margin-left  : .75rem;
+}
+
+.item .item-info .title .btn {
+    font-family   : "Noto Sans";
+    font-size     : 19px;
+    color         : var(--main-mint-1);
+    padding       : 10px 38px;
+    border-radius : 8px;
+    border-color  : var(--main-mint-1);
+    vertical-align: text-bottom;
+}
+
+.item .item-info table td {
+    font-family   : "Noto Sans";
+    font-size     : 30px;
+    color         : #707070;
+    vertical-align: baseline;
+}
+
+.color-box {
+    display         : block;
+    float           : right;
+    width           : 36px;
+    height          : 31px;
+    background-color: var(--sub-blue);
+}
+
+.number-input {
+    width: 172px;
+}
+
+.number-input.input-group .input-group-text {
+    border          : 1px solid var(--main-mint-1);
+    border-radius   : 0;
+    background-color: var(--main-white);
+    height          : 36px;
+    padding-left    : 13px;
+    padding-right   : 13px;
+    font-size       : 24px;
+    cursor          : pointer;
+}
+
+.number-input.input-group .form-control {
+    font-size       : 24px;
+    font-weight     : 400;
+    color           : var(--main-black);
+    background-color: var(--main-white);
+    border          : 1px solid var(--main-mint-1);
+    border-radius   : 0;
+    height          : 36px;
+    text-align      : center;
+}
+
+.number-input input::-webkit-outer-spin-button,
+.number-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin            : 0;
+}
+
+.contain-footer {
+    position        : sticky;
+    width           : 1550px;
+    height          : 90px;
+    background-color: var(--main-mint-2);
+    border-radius   : 8px;
+    bottom          : 2px;
+    left            : calc(50% - 775px);
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+
+.contain-footer-left {
+    font-family: "Noto Sans";
+    font-size  : 40px;
+    color      : var(--color-black);
+    margin-left: 95px;
+}
+
+.contain-footer-center span {
+    font-family: "Noto Sans";
+    font-size  : 40px;
+    color      : var(--color-black);
+}
+
+.contain-footer-right {
+    font-family     : "SVN Gotham Book";
+    font-size       : 30px;
+    color           : var(--main-white);
+    padding         : 25px 85px;
+    background-color: var(--sub-blue);
+    height          : 100%;
+    border-radius   : 0 8px 8px 0;
+    border          : 0;
+    box-shadow      : none;
+    outline         : 0;
+    cursor          : pointer;
+}
+
+.no-item .contain-header {
+    margin-top: 137px;
+}
+
+.no-item .contain-header .desc {
+    margin-bottom: 40px;
+}

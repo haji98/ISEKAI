@@ -19,6 +19,11 @@ $(function () {
     $("#close-popup").click(function () {
         $('#chat-popup').removeClass('popup-box-on');
     });
+
+    // Checkbox
+    $('.check-input-custom').on('click', function () {
+        $(this).parent().find('.form-check-input').click();
+    })
 })
 
 function forgotPassword() {

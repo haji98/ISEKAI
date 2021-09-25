@@ -87,7 +87,7 @@
     text-decoration: underline;
 }
 
-.login-modal form .form-check {
+.form-check {
     margin-top   : 27px;
     margin-bottom: 19px;
     padding      : 0;
@@ -95,11 +95,11 @@
     align-items  : center;
 }
 
-.login-modal form .form-check .form-check-input {
+.form-check .form-check-input {
     z-index: -9999;
 }
 
-.login-modal form .form-check .check-input-custom {
+.form-check .check-input-custom {
     height          : 34px;
     width           : 34px;
     border-radius   : 5px;
@@ -110,13 +110,13 @@
     cursor          : pointer;
 }
 
-.login-modal form .form-check .form-check-input[type=checkbox]:checked+.check-input-custom {
+.form-check .form-check-input[type=checkbox]:checked+.check-input-custom {
     background-image   : url('../img/icon/checked-icon.png');
     background-position: center center;
     background-repeat  : no-repeat;
 }
 
-.login-modal form .form-check .form-check-label {
+.form-check .form-check-label {
     color      : var(--main-mint-2);
     font-size  : 19px;
     font-weight: bold;

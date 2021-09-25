@@ -29,6 +29,11 @@
 }
 
 @font-face {
+    font-family: "SVN Gotham Light";
+    src        : url('../fonts/SVN-Gotham\ Light.ttf');
+}
+
+@font-face {
     font-family: "Fira Sans Regular";
     src        : url('../fonts/FiraSans-Regular.ttf');
 }
