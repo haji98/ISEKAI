@@ -1,31 +1,12 @@
 /* Banner */
 .banner-section {
-    background-image   : url(../img/poster-04.jpg);
-    background-repeat  : no-repeat;
-    background-position: center -31.25rem;
-    background-size    : 100% auto;
-    object-fit         : cover;
-    height             : 61.25rem;
-    width              : 100%;
-    padding            : 7.813rem 10rem;
+    background-image: url(../img/banner/1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    height: 61.25rem;
+    width: 100%;
 }
-
-.banner-info {
-    margin         : auto;
-    border         : 20px solid var(--main-white);
-    text-align     : center;
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    height         : 100%;
-}
-
-.banner-header {
-    font-family: "Tw Cen MT";
-    font-size  : 12.125rem;
-    color      : var(--main-mint-2);
-}
-
 /* END - Banner */
 
 /* Main */

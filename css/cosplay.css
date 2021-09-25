@@ -1,57 +1,11 @@
 .banner-section {
     position           : relative;
-    background-image   : url(../img/banner-cosplay.png);
+    background-image   : url(../img/banner/2.png);
     width              : 100%;
     height             : 910px;
-    background-position: center bottom;
-    background-repeat  : no-repeat;
-    object-fit         : contain;
-}
-
-.banner-info {
-    position           : absolute;
-    background-image   : url(../img/banner-path.png);
-    width              : 620px;
-    height             : 400px;
-    top                : 70px;
-    left               : 100px;
     background-position: center;
     background-repeat  : no-repeat;
-    display            : flex;
-    align-items        : end;
-}
-
-.banner-info .banner-header {
-    font-family  : "SVN Gotham Thin";
-    font-size    : 40px;
-    color        : var(--main-white);
-    text-align   : center;
-    margin-bottom: 90px;
-}
-
-.banner-logo {
-    position: absolute;
-    width   : 1320px;
-    height  : 600px;
-    top     : 200px;
-    right   : 35px;
-}
-
-.banner-logo img {
-    position  : absolute;
-    top       : 30px;
-    right     : 60px;
-    max-height: 42px;
-}
-
-.banner-logo .social {
-    position: absolute;
-    bottom  : 30px;
-    right   : 60px;
-}
-
-.banner-logo .social img {
-    position: unset;
+    object-fit         : contain;
 }
 
 main {

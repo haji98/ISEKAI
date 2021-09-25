@@ -22,10 +22,15 @@ main {
 }
 
 .card-header .btn {
+    font-family  : "Noto Sans";
     font-size    : 50px;
     color        : var(--main-black);
     margin-bottom: 50px;
     padding      : 0;
+}
+
+.card-header .btn.collapsed {
+    font-size  : 44px;
 }
 
 .card-header .btn::before {

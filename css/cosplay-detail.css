@@ -1,10 +1,9 @@
 /* Banner */
 .banner-section {
     position           : relative;
-    background-image   : url(../img/cosplay-detail-01.png);
+    background-image   : url(../img/banner/3.png);
     background-repeat  : no-repeat;
-    background-position: center center;
-    background-size    : auto 100%;
+    background-position: center;
     object-fit         : cover;
     height             : 900px;
     width              : 100%;
