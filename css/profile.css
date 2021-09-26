@@ -80,16 +80,17 @@ main {
     border-radius: 8px;
 }
 
-.main-form .form-check .form-check-label {
+.main-form .form-check-inline .form-check-label {
     margin-right: 27px;
 }
 
-.main-form .form-check .form-check-input {
+.main-form .form-check-inline .form-check-input {
     width : 42px;
     height: 42px;
+    cursor: pointer;
 }
 
-.main-form .form-check .form-check-input:checked {
+.main-form .form-check-inline .form-check-input:checked {
     background-color: var(--main-mint-1);
 }
 
