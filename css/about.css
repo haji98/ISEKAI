@@ -1,0 +1,194 @@
+.section-1 {
+    background-color   : var(--main-mint-1);
+    background-image   : url(../img/bg-about.png);
+    background-position: -714px -855.6px;
+    width              : 100%;
+    height             : 2121px;
+    position           : relative;
+}
+
+.section-1 .header {
+    position       : absolute;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    width          : 1590px;
+    top            : 33px;
+    left           : calc(50% - 795px);
+}
+
+.section-1 .header img {
+    height: 30px;
+}
+
+.section-1 .header .btn {
+    font-family     : "SVN Gotham Bold";
+    font-size       : 21px;
+    color           : var(--main-black);
+    background-color: var(--main-mint-2);
+    padding         : 20px 48.5px;
+    border-radius   : 8px;
+}
+
+.section-1 .banner-1 {
+    height         : 1082px;
+    width          : 100%;
+    display        : flex;
+    justify-content: space-between;
+    padding-top    : 282px;
+}
+
+.section-1 .banner-1 .content-1 .title {
+    font-family: "SVN Gotham Bold";
+    font-size  : 72px;
+    color      : var(--main-white);
+}
+
+.section-1 .banner-1 .content-1 .txt {
+    width    : 380px;
+    font-size: 30px;
+    color    : var(--main-mint-2);
+}
+
+.section-1 .banner-1 .content-2 {
+    margin-top  : 176.5px;
+    margin-right: 156px;
+}
+
+.section-1 .banner-1 .content-2 img {
+    height: 115px;
+}
+
+.section-1 .banner-2 {
+    height    : 1044px;
+    width     : 100%;
+    text-align: right;
+}
+
+.section-1 .banner-2 .txt {
+    margin-top  : 280px;
+    margin-left : auto;
+    width       : 536px;
+    font-size   : 30px;
+    color       : var(--main-mint-2);
+}
+
+.section-2 {
+    background-image: url(../img/bg-user.png);
+    background-color: var(--main-mint-2);
+    padding         : 70px 200px;
+}
+
+.section-2 .contain-custom{
+    display         : flex;
+    justify-content : space-between;
+}
+
+.section-2 .section-left .title {
+    font-family  : "SVN Gotham Bold";
+    font-size    : 72px;
+    color        : var(--main-black);
+    margin-top   : 200px;
+    margin-bottom: 46px;
+}
+
+.section-2 .section-left .txt {
+    width    : 750px;
+    font-size: 30px;
+    color    : var(--main-black);
+}
+
+.section-2 .section-right img {
+    height: 943px;
+    width : auto;
+}
+
+.section-3 {
+    background-color: var(--main-mint-1);
+    padding         : 86px 198px 116px 198px;
+    text-align      : center;
+}
+
+.section-3 .title {
+    font-family  : "SVN Gotham Bold";
+    font-size    : 72px;
+    color        : var(--main-mint-2);
+    margin-bottom: 40px;
+}
+
+.section-3 .desc {
+    width    : 856px;
+    font-size: 30px;
+    color    : var(--main-mint-2);
+    margin   : auto;
+}
+
+.section-3 img {
+    margin-top: 45px;
+    width     : 1524px;
+    text-align: center;
+}
+
+.section-4 {
+    background-color: var(--main-mint-2);
+    padding-top     : 112px;
+    text-align      : center;
+}
+
+.section-4 .title {
+    font-family  : "SVN Gotham Bold";
+    font-size    : 72px;
+    color        : var(--main-black);
+    margin-bottom: 40px;
+}
+
+.section-4 .desc {
+    width    : 700px;
+    font-size: 30px;
+    color    : var(--main-black);
+    margin   : auto;
+}
+
+.section-4 .group {
+    display        : flex;
+    gap            : 96px;
+    flex-wrap      : wrap;
+    align-self     : center;
+    justify-content: center;
+    width          : 1448px;
+    margin         : auto;
+    margin-top     : 92px;
+}
+
+.section-4 .item {
+    margin-bottom: 73px;
+}
+
+.section-4 .group .item .ava {
+    width        : 282px;
+    height       : 282px;
+    margin-bottom: 31px;
+    object-fit   : contain;
+}
+
+.section-4 .group .item .name {
+    font-family  : "SVN Gotham Bold";
+    font-size    : 31px;
+    color        : var(--main-black);
+    margin-bottom: 17px;
+}
+
+.section-4 .group .item .txt {
+    font-size    : 21px;
+    color        : var(--main-black);
+    margin-bottom: 39px;
+}
+
+.contain-custom {
+    max-width: 1590px;
+    margin   : auto;
+}
+.contain-custom-lg {
+    max-width: 1640px;
+    margin   : auto;
+}
