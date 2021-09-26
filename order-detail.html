@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-    <title>Thanh toán</title>
+    <title>Theo dõi đơn hàng</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="./lib/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link href="./css/style.css" rel="stylesheet">
-    <link href="./css/payment.css" rel="stylesheet">
+    <link href="./css/order-detail.css" rel="stylesheet">
     <link href="./css/modal.css" rel="stylesheet">
 
     <!-- Scripts -->
@@ -85,149 +85,72 @@
 
     <!-- Main -->
     <main>
-        <div class="payment">
-            <section class="section-1">
-                <div class="container-custom">
-                    <span style='font-size: 44px; font-family: "Noto Sans"'>Thanh Toán</span><br>
-                    <hr>
-                    <span class="header-blue">Địa chỉ nhận hàng</span><br><br>
-                    <span style='font-size: 27px; font-family: "Noto Sans";'>Hải Anh</span><br>
-                    <span style='font-size: 25px; font-family: "Noto Sans";'>(+84)34567890</span><br>
-                    <span style='font-size: 25px; font-family: "Noto Sans";'>Số 3 Lương Yên, Hai Bà Trưng, Hà Nội</span>
-                    <a href=""
-                        style='color: var(--sub-blue); font-size: 20px; font-family: "Noto Sans"; text-decoration: underline; margin-left: 25px;'>Thay
-                        đổi</a>
+        <section class="section-1">
+            <span style='font-family: "Noto Sans"; font-size: 29px; color: #1F1F1F;'>ID Đơn Hàng : 234567891011</span>
+            <div class="content">
+                <div class="order-follow">
+                    <div class="step">
+                        <div class="img"><img src="./img/icon/step-1.png" alt=""></div>
+                        <span>Đơn Hàng đã đặt</span>
+                    </div>
+                    <div class="step">
+                        <div class="img"><img src="./img/icon/step-2.png" alt=""></div>
+                        <span>Đơn hàng đã hoàn thành</span>
+                    </div>
+                    <div class="step">
+                        <div class="img"><img src="./img/icon/step-3.png" alt=""></div>
+                        <span>Đã giao cho ĐVVC</span>
+                    </div>
+                    <div class="step">
+                        <div class="img"><img src="./img/icon/step-4.png" alt=""></div>
+                        <span>Đã nhận được hàng</span>
+                    </div>
                 </div>
-            </section>
-            <section class="section-2">
-                <div class="container-custom">
-                    <span class="header-blue">Sản Phẩm</span><br>
-                    <hr class="hr-blue">
-                    <div class="item-info">
-                        <div class="img">
-                            <img src="./img/products/008.png" alt="">
+                <div class="order-desc">
+                    <div class="title">Địa chỉ nhận hàng</div>
+                    <div class="info">
+                        <div class="info-left">
+                            <span style='font-size: 27px; font-family: "Noto Sans";'>Hải Anh</span><br>
+                            <span style='font-size: 25px; font-family: "Noto Sans";'>(+84)34567890</span><br>
+                            <span style='font-size: 25px; font-family: "Noto Sans";'>Số 3 Lương Yên, Hai Bà Trưng, Hà
+                                Nội</span>
                         </div>
-                        <div class="content">
-                            <div class="title">Áo phông Boku no Hero</div>
-                            <span class="color-box"></span>
-                            <div class="size">XL, x1</div>
+                        <div class="info-right">
+                            <span class="text-blue">Đã giao hàng thành công</span>
+                            <span>...</span>
+                            <span>Đang chuẩn bị hàng</span>
                         </div>
-                        <div class="price">199.000 VND</div>
-                    </div>
-            </section>
-            <section class="section-3">
-                <div class="container-custom">
-                    <table class="table table-borderless w-100">
-                        <tr>
-                            <td><span class="header-blue">Phí Vận Chuyển</span></td>
-                            <td class="text-right">
-                                <span class="header-blue" style="color: var(--color-black);">10.000VND</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><span class="header-blue">Voucher</span></td>
-                            <td class="text-right">
-                                <a href=""
-                                    style="font-size: 20px; color: var(--sub-blue); text-decoration: underline;">Chọn
-                                    Voucher</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><span class="header-blue"><b>Phương Thức Thanh Toán</b></span></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="group-method">
-                                    <button class="btn active">TK Ngân Hàng</button>
-                                    <button class="btn">VNPay</button>
-                                    <button class="btn">Thanh toán khi nhận hàng</button>
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="group-discount">
-                                    <button class="btn"><span>Giảm đến 10%</span><br>Ưu Đãi Cho TK Ngân Hàng</button>
-                                    <button class="btn"><span>Giảm đến 20%</span><br>Ưu Đãi Cho TK Ngân Hàng</button>
-                                    <button class="btn"><span>Giảm đến 50%</span><br>Ưu Đãi Cho Ví Vnpay </button>
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td style="padding-top: 42px;">
-                                <div
-                                    style="font-family: 'Noto Sans'; font-size: 19px; color: #4A4A4A; margin-right: 77px; display: inline-block;">
-                                    Thanh toán khi nhận hàng </div>
-                                <div
-                                    style="font-family: 'Noto Sans'; font-size: 19px; color: #4A4A4A; display: inline-block;">
-                                    Phí thu hộ: 0VNĐ</div>
-                            </td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
-            <section class="section-4">
-                <div class="container-custom text-right">
-                    <div class="f-right">
-                        <table>
-                            <tr style="height: 55px;"></tr>
-                            <tr>
-                                <td><span class="small">Tổng giá hàng</span></td>
-                                <td><span> đ199.000</span></td>
-                            </tr>
-                            <tr>
-                                <td><span class="small">Phí vận chuyển</span></td>
-                                <td><span>đ10.000</span></td>
-                            </tr>
-                            <tr>
-                                <td><span>Tổng số tiền</span></td>
-                                <td><span class="price">209.000 VND</span></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <hr class="hr-blue">
-                    <div class="f-right" style="padding-top: 36px; padding-bottom: 65px;">
-                        <button class="btn" onclick="paymentSuccess()">Đặt hàng</button>
-                    </div>
-                </div>
-            </section>
-
-        </div>
-
-        <div class="payment-success d-none">
-            <div class="container-custom">
-                <div class="contain-header">
-                    <img src="./img/payment-success.png" alt="">
-                    <div class="title">Đặt hàng thành công</div>
-                    <div class="desc">Cảm ơn quý khách đã đặt hàng và tin tưởng ISEKAI. Sản phẩm của bạn sẽ được
-                        đóng gói và vận chuyển trong thời gian nhanh nhất</div>
-                    <div class="btns">
-                        <a type="button" href="./order-detail.html" class="btn">Chi tiết Đơn hàng</a>
-                        <a type="button" href="./shop.html" class="btn btn-blue">Tiếp tục mua sắm</a>
                     </div>
                 </div>
             </div>
-
-            <section class="other-products">
-                <div class="other-title">SẢN PHẨM KHÁC</div>
-                <div class="other-slide">
-                    <div class="chevron">
-                        <img src="./img/icon/chevron-left.png" alt="">
-                    </div>
+        </section>
+        <section class="section-2">
+            <div class="item-info">
+                <div class="img">
                     <img src="./img/products/008.png" alt="">
-                    <img src="./img/weapons/01.png" alt="">
-                    <img src="./img/products/012.png" alt="">
-                    <div class="chevron">
-                        <img src="./img/icon/chevron-right.png" alt="">
-                    </div>
                 </div>
-            </section>
-        </div>
-
+                <div class="content">
+                    <div class="title">Áo phông Boku no Hero</div>
+                    <span class="color-box"></span>
+                    <div class="size">XL, x1</div>
+                </div>
+                <div class="price">199.000 VND</div>
+            </div>
+            <table>
+                <tr>
+                    <td>Tổng giá hàng</td>
+                    <td>đ199.000</td>
+                </tr>
+                <tr>
+                    <td>Phí vận chuyển</td>
+                    <td>đ10.000</td>
+                </tr>
+                <tr>
+                    <td>Tổng số tiền</td>
+                    <td>209.000 VND</td>
+                </tr>
+            </table>
+        </section>
     </main>
     <!-- END - Main -->
 
@@ -479,19 +402,3 @@
     </div>
     <!-- END - Chat Modal -->
 </body>
-
-<script>
-    $(function () {
-        $('.group-method .btn').on('click', function () {
-            $('.group-method .btn').removeClass('active');
-            $(this).addClass('active');
-        })
-    })
-
-    function paymentSuccess() {
-        $('.payment').addClass('d-none');
-        $('.payment-success').removeClass('d-none');
-
-    }
-
-</script>

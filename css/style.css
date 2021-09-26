@@ -86,6 +86,7 @@ header.nav-light {
 .nav-blue {
     color  : var(--main-black);
     padding: 4.375rem 1.25rem;
+    height : 197px;
 }
 
 .nav-blue .navbar-brand img {
@@ -171,7 +172,7 @@ header.nav-light {
 }
 
 .nav-user {
-    margin-right: 90px;
+    margin-right: 21.78px;
 }
 
 .nav-user .dropdown-menu {
